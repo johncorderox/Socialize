@@ -16,23 +16,21 @@
 
 <div class = "rightSide">
 <h2>Socialize</h2>
-
-<input type = "text" placeholder=" Try 'twitter or even 'github'" size = "40"
-        ng-model = "search"/>
 <div ng-app = "socialApp" ng-controller = "MainController">
 
-
+  <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'"
+   size = "40" />
     <ul class = "rightUL">
-      <li ng-repeat = "x in subjects">
-        {{x}}
+      <li ng-repeat = "subject in subjects | filter:search">
+        {{subject}}
       </li>
     </ul>
+
 </div>
 </div>
 
 <script>
 angular.module('socialApp', []).controller('MainController', function($scope){
-
 
   $scope.subjects = [
 
@@ -57,8 +55,6 @@ angular.module('socialApp', []).controller('MainController', function($scope){
       'WhatsApp',
       'Xbox Live',
       'YouTube'
-
-
   ];
 });
 
