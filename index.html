@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+<ul>
+  <li><a class = "active" href = "#">Home</a></li>
+  <li><a href = "#">FAQ</a></li>
+  <li><a href = "#">Suggestions</a></li>
+</ul>
+
+</body>
+
+<div class = "rightSide">
+<h2>Socialize</h2>
+
+<input type = "text" placeholder=" Try 'twitter or even 'github'" size = "40" />
+<div ng-app = "socialApp" ng-controller = "MainController">
+
+
+    <ul class = "rightUL">
+      <li ng-repeat = "x in subjects"> {{x}}
+
+      </li>
+    </ul>
+
+</div>
+
+</div>
+
+<script>
+angular.module('socialApp', []).controller('MainController', function($scope){
+
+  $scope.subjects = [
+
+      'github',
+      'twitter',
+      'tumblr',
+  ];
+});
+
+</script>
+  </body>
+</html>
