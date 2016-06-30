@@ -15,7 +15,11 @@ $(document).ready(function(){
 
 });
 
+
 function getCode() {
+
+var placeholder = userURL.value;
+
 
 
 }

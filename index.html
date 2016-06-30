@@ -6,32 +6,30 @@
     <link href="css/main.css" rel="stylesheet" />
     <script type='text/javascript' src='js/website.js'></script>
 </head>
-
-<body>
-<ul>
-  <li><a class = "active" href = "#">Home</a></li>
-  <li><a href = "pages/faq.html">FAQ</a></li>
-  <li><a href = "#">Suggestions</a></li>
-</ul>
-
-</body>
+  <body>
+  <ul>
+    <li><a class = "active" href = "#">Home</a></li>
+    <li><a href = "pages/faq.html">FAQ</a></li>
+    <li><a href = "#">Suggestions</a></li>
+  </ul>
+  </body>
 <div class = "rightSide">
 <h2>Socialize</h2>
 <div ng-app = "socialApp" ng-controller = "MainController">
-
-  <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'"
+<input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'"
    size = "40" />
     <ul class = "rightUL">
       <li ng-repeat = "subject in subjects | filter:search" ng-click = "detectClick(subject)" >
           {{subject}}
       </li>
-</ul>
-
+    </ul>
 </div>
 <br>
-<input type = "text" placeholder = "Enter your URL:" name = "htmlInput" />
-<button onclick="getCode()"> Get Code!</button>
-
+  <input type = "text" placeholder = "Your URL:" id = "userURL" /><br />
+  <input type = "button" value = "click" onclick="getCode()" />
+  <textarea rows = "6" cols = "40">
+  OUTPUT CODE HERE
+  </textarea>
 </div>
 
 
