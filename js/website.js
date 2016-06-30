@@ -14,3 +14,8 @@ $(document).ready(function(){
 
 
 });
+
+function getCode() {
+
+
+}

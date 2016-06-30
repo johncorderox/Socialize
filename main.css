@@ -46,6 +46,7 @@ li a:hover:not(.active) {
 
 }
 
+
 .rightUL {
 
 	color: #FF8C94;
@@ -60,4 +61,6 @@ li a:hover:not(.active) {
 .rightUL li {
 
 	margin-top: 10px;
+	cursor: pointer;
+
 }

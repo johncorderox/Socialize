@@ -15,7 +15,6 @@
 </ul>
 
 </body>
-
 <div class = "rightSide">
 <h2>Socialize</h2>
 <div ng-app = "socialApp" ng-controller = "MainController">
@@ -23,16 +22,34 @@
   <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'"
    size = "40" />
     <ul class = "rightUL">
-      <li ng-repeat = "subject in subjects | filter:search">
-        {{subject}}
+      <li ng-repeat = "subject in subjects | filter:search" ng-click = "detectClick(subject)" >
+          {{subject}}
       </li>
-    </ul>
+</ul>
 
 </div>
+<br>
+<input type = "text" placeholder = "Enter your URL:" name = "htmlInput" />
+<button onclick="getCode()"> Get Code!</button>
+
 </div>
+
 
 <script>
 angular.module('socialApp', []).controller('MainController', function($scope){
+
+  $scope.detectClick = function(subject) {
+
+    var clickedSubject = $scope.subjects.indexOf(subject);
+
+    switch (clickedSubject) {
+      case 0:
+        alert("you got email!");
+        break;
+      default:
+
+    }
+  }
 
   $scope.subjects = [
 
@@ -63,5 +80,6 @@ angular.module('socialApp', []).controller('MainController', function($scope){
 });
 
 </script>
+
   </body>
 </html>
