@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $(".code").hide();
+
   $("li").mouseenter(function(){
 
     $(this).css("color","black");
@@ -12,9 +14,14 @@ $(document).ready(function(){
 
   });
 
-
 });
 
+
+function showContent() {
+
+  $('.code').show();
+
+}
 
 function getCode() {
 

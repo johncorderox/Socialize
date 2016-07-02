@@ -28,13 +28,14 @@
     </ul>
 </div>
 <br>
+<div class = "code">
   <input type = "text" placeholder = "Your URL:" id = "userURL" /><br />
   <input type = "button" value = "click" onclick="getCode()" />
   <textarea rows = "6" cols = "40">
   </textarea>
 </div>
 </div>
-
+</div>
 
 <script>
 angular.module('socialApp', []).controller('MainController', function($scope){
@@ -46,10 +47,12 @@ angular.module('socialApp', []).controller('MainController', function($scope){
     switch (clickedSubject) {
       case 0:
 
+        showContent();
         var usersrc = "icons/Deviantart.png"
-        var userLink = "www.google.com";
+        var userLink = placeholder;
         // <a href=”URL of destination site page”><img src=”photo URL”></a>
-        alert("<a href=\"" + userLink + "\">" + usersrc + "</a>");
+      //  alert("<a href=\"" + userLink + "\">" + usersrc + "</a>");
+      alert(placeholder);
         break;
       default:
 
