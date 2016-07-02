@@ -18,8 +18,17 @@ $(document).ready(function(){
 
 function getCode() {
 
-var placeholder = userURL.value;
+if (userURL.value == "") {
 
+  alert("You did not enter a URL");
+}
+
+else if (userURL.value.length < 6) {
+
+  alert("Not a valid URL, Please try again.");
+}
+
+var placeholder = userURL.value;
 
 
 }

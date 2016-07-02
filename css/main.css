@@ -49,14 +49,20 @@ li a:hover:not(.active) {
     color: white;
 }
 
+.navbar {
+
+	float: left;
+}
+
 .rightSide {
 
 	margin-left: 25%;
-	padding: 1px 16px;
+	padding: 16px 16px;
 	height: 1000px;
 
-}
 
+
+}
 
 .rightUL {
 

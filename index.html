@@ -7,17 +7,20 @@
     <script type='text/javascript' src='js/website.js'></script>
 </head>
   <body>
+<div class = "navbar">
   <ul>
     <li><a class = "active" href = "#">Home</a></li>
     <li><a href = "pages/faq.html">FAQ</a></li>
     <li><a href = "#">Suggestions</a></li>
   </ul>
+</div>
   </body>
+<div class = "container">
 <div class = "rightSide">
 <h2>Socialize</h2>
 <div ng-app = "socialApp" ng-controller = "MainController">
 <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'"
-   size = "40" />
+   size = "40" /><br />
     <ul class = "rightUL">
       <li ng-repeat = "subject in subjects | filter:search" ng-click = "detectClick(subject)" >
           {{subject}}
@@ -28,8 +31,8 @@
   <input type = "text" placeholder = "Your URL:" id = "userURL" /><br />
   <input type = "button" value = "click" onclick="getCode()" />
   <textarea rows = "6" cols = "40">
-  OUTPUT CODE HERE
   </textarea>
+</div>
 </div>
 
 
@@ -42,7 +45,11 @@ angular.module('socialApp', []).controller('MainController', function($scope){
 
     switch (clickedSubject) {
       case 0:
-        alert("you got email!");
+
+        var usersrc = "icons/Deviantart.png"
+        var userLink = "www.google.com";
+        // <a href=”URL of destination site page”><img src=”photo URL”></a>
+        alert("<a href=\"" + userLink + "\">" + usersrc + "</a>");
         break;
       default:
 
@@ -51,6 +58,7 @@ angular.module('socialApp', []).controller('MainController', function($scope){
 
   $scope.subjects = [
 
+      'Deviantart',
       'Email',
       'Facebook',
       'Flickr',
@@ -73,6 +81,7 @@ angular.module('socialApp', []).controller('MainController', function($scope){
       'Vine',
       'WhatsApp',
       'Xbox Live',
+      'Yelp',
       'YouTube'
   ];
 });
