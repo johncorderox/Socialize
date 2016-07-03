@@ -30,8 +30,8 @@
 <br>
 <div class = "code">
   <input type = "text" placeholder = "Your URL:" id = "userURL" /><br />
-  <input type = "button" value = "click" onclick="getCode()" />
-  <textarea rows = "6" cols = "40">
+  <input type = "button" value = "click" onclick="getCode(0)" />
+  <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
   </textarea>
 </div>
 </div>
@@ -48,11 +48,9 @@ angular.module('socialApp', []).controller('MainController', function($scope){
       case 0:
 
         showContent();
-        var usersrc = "icons/Deviantart.png"
-        var userLink = placeholder;
         // <a href=”URL of destination site page”><img src=”photo URL”></a>
       //  alert("<a href=\"" + userLink + "\">" + usersrc + "</a>");
-      alert(placeholder);
+        getCode(0);
         break;
       default:
 
