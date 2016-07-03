@@ -26,39 +26,54 @@
           {{subject}}
       </li>
     </ul>
+
+    <div class = "code">
+      <input type = "text" placeholder = "Your URL:" id = "userURL" size = "25" /><br />
+      <input type = "button" value = "Get My Code!" ng-click="code()" /><br />
+      <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
+      </textarea>
+    </div>
 </div>
 <br>
-<div class = "code">
-  <input type = "text" placeholder = "Your URL:" id = "userURL" /><br />
-  <input type = "button" value = "click" onclick="getCode(0)" />
-  <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
-  </textarea>
-</div>
+
 </div>
 </div>
 
 <script>
 angular.module('socialApp', []).controller('MainController', function($scope){
 
-  $scope.detectClick = function(subject) {
+var count = 0;
 
-    var clickedSubject = $scope.subjects.indexOf(subject);
+$scope.code = function () {
 
-    switch (clickedSubject) {
-      case 0:
+  if (count == 1) {
+    var usersrc = "http://i68.tinypic.com/537ora.jpg";
+    var userLink = document.getElementById('userURL').value;
+    var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
+   document.getElementById('textBox').value = output;
 
-        showContent();
-        // <a href=”URL of destination site page”><img src=”photo URL”></a>
-      //  alert("<a href=\"" + userLink + "\">" + usersrc + "</a>");
-        getCode(0);
-        break;
-      default:
 
-    }
+}
+
   }
 
-  $scope.subjects = [
 
+
+
+
+  $scope.detectClick = function(subject) {
+    var clickedSubject = $scope.subjects.indexOf(subject);
+    switch (clickedSubject) {
+      case 0:
+        showContent();
+        count += 1;
+
+
+        break;
+      default:
+    }
+  }
+  $scope.subjects = [
       'Deviantart',
       'Email',
       'Facebook',
@@ -86,7 +101,6 @@ angular.module('socialApp', []).controller('MainController', function($scope){
       'YouTube'
   ];
 });
-
 </script>
 
   </body>
