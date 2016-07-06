@@ -7,7 +7,7 @@
 
 2. Check fields if they are empty.
 
-3. Fields MUST reset when user clicks another option.
+3. Fields MUST reset when user clicks another option. Severity: HIGH
 
 4. PHP script to email me. (?)
 

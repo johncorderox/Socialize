@@ -29,3 +29,10 @@ function switchError() {
     console.log("Error in switch regarding $scope.detectClick function");
 
   }
+
+function reset() {
+
+  document.getElementById('userURL').value = "";
+  document.getElementById('textBox').value = "Your Code will be here!";
+
+}

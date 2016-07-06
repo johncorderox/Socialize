@@ -42,12 +42,11 @@
 angular.module('socialApp', []).controller('MainController', function($scope){
 
 var count = 0;
-var check = 0;
 
 $scope.code = function () {
 
-  //Deviantart
-  if (count == 1) {
+//Deviantart
+if (count == 1) {
     var usersrc = "http://i68.tinypic.com/537ora.jpg";
     var userLink = document.getElementById('userURL').value;
     var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
@@ -57,7 +56,7 @@ $scope.code = function () {
 //Email
 if (count == 2) {
 
-  var usersrc = "http://i68.tinypic.com/537ora.jpg";
+  var usersrc = "http://i68.tinypic.com/5a.jpg";
   var userLink = document.getElementById('userURL').value;
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
   document.getElementById('textBox').value = output;
@@ -66,7 +65,7 @@ if (count == 2) {
 //Facebook
 if (count == 3) {
 
-  var usersrc = "http://i68.tinypic.com/537ora.jpg";
+  var usersrc = "http://i68.tinypic.ora.jpg";
   var userLink = document.getElementById('userURL').value;
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
   document.getElementById('textBox').value = output;
@@ -77,24 +76,27 @@ if (count == 3) {
 
   }
 
-
-
   $scope.detectClick = function(subject) {
 
+    count = 0;
     var clickedSubject = $scope.subjects.indexOf(subject);
     switch (clickedSubject) {
       case 0:
         showContent();
-        count += 1;
+        reset();
+        count = 1;
+
         break;
       case 1:
         showContent();
-        count += 2;
+        reset();
+        count = 2;
         break;
 
       case 2:
         showContent();
-        count += 3;
+        reset();
+        count = 3;
         break;
 
 
