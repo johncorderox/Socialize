@@ -35,7 +35,6 @@
   </div>
 </div>
 <br>
-
 </div>
 </div>
 
@@ -43,21 +42,19 @@
 angular.module('socialApp', []).controller('MainController', function($scope){
 
 var count = 0;
-
+var check = 0;
 
 $scope.code = function () {
 
-
+  //Deviantart
   if (count == 1) {
-
     var usersrc = "http://i68.tinypic.com/537ora.jpg";
     var userLink = document.getElementById('userURL').value;
     var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
     document.getElementById('textBox').value = output;
 
-
 }
-
+//Email
 if (count == 2) {
 
   var usersrc = "http://i68.tinypic.com/537ora.jpg";
@@ -65,38 +62,44 @@ if (count == 2) {
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
   document.getElementById('textBox').value = output;
 
+}
+//Facebook
+if (count == 3) {
+
+  var usersrc = "http://i68.tinypic.com/537ora.jpg";
+  var userLink = document.getElementById('userURL').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
+  document.getElementById('textBox').value = output;
 
 }
 
-else {
-
-
-}
-
-  }
-
-  $scope.checkFields = function () {
-
 
 
   }
+
+
 
   $scope.detectClick = function(subject) {
 
     var clickedSubject = $scope.subjects.indexOf(subject);
-
-
     switch (clickedSubject) {
       case 0:
         showContent();
         count += 1;
         break;
-
       case 1:
         showContent();
         count += 2;
         break;
+
+      case 2:
+        showContent();
+        count += 3;
+        break;
+
+
       default:
+              switchError();
     }
   }
   $scope.subjects = [
@@ -104,30 +107,32 @@ else {
       'Email',
       'Facebook',
       'Flickr',
-      'Foursquare',
-      'Github',
-      'Google +',
-      'Instagram',
-      'LinkedIn',
-      'MySpace',
-      'Nintendo Network ID',
-      'Pinterest',
-      'Playstation Network',
-      'Reddit',
-      'Skype',
-      'SnapChat',
-      'SoundCloud',
-      'Spotify',
-      'Tumblr',
-      'Twitter',
-      'Vine',
-      'WhatsApp',
-      'Xbox Live',
-      'Yelp',
-      'YouTube'
+      'Foursquare'
   ];
 });
 </script>
 
   </body>
 </html>
+<!--
+'Github',
+'Google +',
+'Instagram',
+'LinkedIn',
+'MySpace',
+'Nintendo Network ID',
+'Pinterest',
+'Playstation Network',
+'Reddit',
+'Skype',
+'SnapChat',
+'SoundCloud',
+'Spotify',
+'Tumblr',
+'Twitter',
+'Vine',
+'WhatsApp',
+'Xbox Live',
+'Yelp',
+'YouTube'
+-->

@@ -19,6 +19,13 @@ $(document).ready(function(){
 
 function showContent() {
 
-  $('.code').show();
+  $('.code').toggle(280);
 
 }
+
+function switchError() {
+
+    alert("Error while processing link. Please contact the website administrator.");
+    console.log("Error in switch regarding $scope.detectClick function");
+
+  }

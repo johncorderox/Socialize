@@ -80,6 +80,14 @@ li a:hover:not(.active) {
 
 }
 
+.code {
+
+float: right;
+position fixed;
+
+
+}
+
 button {
 
 	border: none;

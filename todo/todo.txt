@@ -1,0 +1,14 @@
+//==========================================
+// To do for Socialize
+
+
+
+1. CSS Layout. Move the code modular to the 3rd column and center it.
+
+2. Check fields if they are empty.
+
+3. Fields MUST reset when user clicks another option.
+
+4. PHP script to email me. (?)
+
+5. fix angular controllers for organization.
