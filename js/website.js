@@ -15,11 +15,23 @@ $(document).ready(function(){
 
   });
 
+  $("#button").hover(function(){
+
+    $(this).css("color", "white");
+
+  },function() {
+
+    $(this).css("color","black");
+
+
+  });
+
 });
 
 function showContent() {
 
-  $('.code').toggle(280);
+  $(".code").hide();
+  $('.code').show(280);
 
 }
 
@@ -28,7 +40,7 @@ function switchError() {
     alert("Error while processing link. Please contact the website administrator.");
     console.log("Error in switch regarding $scope.detectClick function");
 
-  }
+}
 
 function reset() {
 
