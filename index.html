@@ -34,7 +34,6 @@
       </textarea>
   </div>
 </div>
-
 <br>
 </div>
 </div>
@@ -45,6 +44,8 @@ angular.module('socialApp', []).controller('MainController', function($scope){
 var count = 0;
 
 $scope.code = function () {
+
+checkFields();
 
 //Deviantart
 if (count == 1) {

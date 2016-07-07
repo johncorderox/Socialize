@@ -1,7 +1,17 @@
+var errorColor = "#ff1a1a"
+
 $(document).ready(function(){
 
   $(".code").hide();
 
+  $("#userURL").keyup(function(event){
+
+    if (event.keyCode == 13) {
+
+      $('#button').click();
+    }
+
+  })
 
   $("li").mouseenter(function(){
 
@@ -28,6 +38,7 @@ $(document).ready(function(){
 
 });
 
+
 function showContent() {
 
   $(".code").hide();
@@ -46,5 +57,22 @@ function reset() {
 
   document.getElementById('userURL').value = "";
   document.getElementById('textBox').value = "Your Code will be here!";
+
+}
+
+function checkFields() {
+
+if (!document.getElementById('userURL').value) {
+
+
+    document.getElementById('userURL').style.borderColor = errorColor;
+    document.getElementById('userURL').style.borderStyle = "thick";
+    document.getElementById('userURL').style.borderStyle = "solid";
+
+    alert("Please enter a URL in the input box.");
+
+    System.exit();
+
+}
 
 }
