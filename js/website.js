@@ -1,4 +1,6 @@
-var errorColor = "#ff1a1a"
+var error_color = "#ff1a1a";
+var border_color = "#bfbfbf";
+
 
 $(document).ready(function(){
 
@@ -9,6 +11,7 @@ $(document).ready(function(){
     if (event.keyCode == 13) {
 
       $('#button').click();
+
     }
 
   })
@@ -55,8 +58,14 @@ function switchError() {
 
 function reset() {
 
+  document.getElementById('userURL').style.borderColor = "";
+  document.getElementById('userURL').style.borderStyle = "";
+  document.getElementById('userURL').style.borderStyle = "";
   document.getElementById('userURL').value = "";
   document.getElementById('textBox').value = "Your Code will be here!";
+
+  //alert message can pop up again.
+  check = 0;
 
 }
 
@@ -65,14 +74,15 @@ function checkFields() {
 if (!document.getElementById('userURL').value) {
 
 
-    document.getElementById('userURL').style.borderColor = errorColor;
+    document.getElementById('userURL').style.borderColor = error_color;
     document.getElementById('userURL').style.borderStyle = "thick";
     document.getElementById('userURL').style.borderStyle = "solid";
 
     alert("Please enter a URL in the input box.");
-
+    // This function will destroy the user from geting the code after
+    // they click get code with nothing inside.
     System.exit();
 
-}
+  }
 
 }

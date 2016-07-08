@@ -5,7 +5,6 @@
 
 1. CSS Layout. Move the code modular to the 3rd column and center it.
 
-4. PHP script to email me. (?)
 
 5. fix angular controllers for organization.
 
