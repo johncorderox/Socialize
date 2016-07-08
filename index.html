@@ -28,8 +28,8 @@
       </li>
     </ul>
     <div class = "code">
-      <input type = "text" size = "39" placeholder = "Your URL*" id = "userURL" /><br />
-      <input type = "button" value = "Get My Code!" ng-click="code()" id = "button" /><br />
+      <input type = "text" size = "39" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" /><br />
+      <input type = "button" value = "Get My Code!" ng-click="code()" id = "button" title = "This will give you your code!" /><br />
       <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
       </textarea>
   </div>
@@ -73,8 +73,6 @@ if (count == 3) {
   document.getElementById('textBox').value = output;
 
 }
-
-
 
   }
 

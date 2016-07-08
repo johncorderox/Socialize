@@ -5,10 +5,21 @@
 
 1. CSS Layout. Move the code modular to the 3rd column and center it.
 
-2. Check fields if they are empty.
-
 4. PHP script to email me. (?)
 
 5. fix angular controllers for organization.
 
 6. Font isn't working
+
+7. problem if a person hits enter for the alert value test function then it will loop
+with the empty field. sigh...
+
+
+
+
+//==========================================
+
+//Ideas
+
+In the future, I think it would be great if the user can enter
+their own width and height attributes to the image.
