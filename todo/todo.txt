@@ -1,10 +1,9 @@
 //==========================================
-// To do for Socialize
+// Known bugs for Socialize.
 
 
 
 1. CSS Layout. Move the code modular to the 3rd column and center it.
-
 
 5. fix angular controllers for organization.
 
@@ -14,11 +13,13 @@
 with the empty field. sigh...
 
 
-
-
+9. create an onHover effect when picking a social site.
 //==========================================
 
-//Ideas
+//Ideas for Socialize.
 
 In the future, I think it would be great if the user can enter
 their own width and height attributes to the image.
+
+
+Adding an email embbeded icon for signatures.
