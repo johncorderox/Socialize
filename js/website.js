@@ -1,8 +1,6 @@
 var error_color = "#ff1a1a";
 var border_color = "#bfbfbf";
 
-var alert_counter = 0;
-
 
 $(document).ready(function(){
 
@@ -66,12 +64,10 @@ function reset() {
   document.getElementById('userURL').value = "";
   document.getElementById('textBox').value = "Your Code will be here!";
 
-  //alert counter reset
-  alert_counter = 0;
+  //alert message can pop up again.
+  check = 0;
 
 }
-
-
 
 function checkFields() {
 
@@ -82,23 +78,9 @@ if (!document.getElementById('userURL').value) {
     document.getElementById('userURL').style.borderStyle = "thick";
     document.getElementById('userURL').style.borderStyle = "solid";
 
-    if(alert_counter == 0) {
 
-      alert("Please enter a valid URL!");
-      alert_counter = 1;
-
-    }
-
-    // This function will destroy the user from geting the code after
-    // they click get code with nothing inside.
     System.exit();
 
   }
-
-    else  {
-
-      reset();
-
-    }
 
 }
