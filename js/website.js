@@ -28,7 +28,7 @@ $(document).ready(function(){
 
   });
 
-  $("#button").hover(function(){
+  $("#button, #button2").hover(function(){
 
     $(this).css("color", "white");
 
@@ -38,6 +38,7 @@ $(document).ready(function(){
 
 
   });
+
 
 });
 
