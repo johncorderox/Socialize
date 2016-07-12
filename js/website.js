@@ -1,10 +1,13 @@
 var error_color = "#ff1a1a";
 var border_color = "#bfbfbf";
+var orange_color = "#FFD3B5";
+var dark_pink = "#FF8C94";
 
 
 $(document).ready(function(){
 
   $(".code").hide();
+  $('.form').hide();
 
   $("#userURL").keyup(function(event){
 
@@ -14,7 +17,7 @@ $(document).ready(function(){
 
     }
 
-  })
+  });
 
   $("li").mouseenter(function(){
 
@@ -38,6 +41,8 @@ $(document).ready(function(){
 
 
   });
+
+  $('.form').fadeIn(1680);
 
 
 });
@@ -74,14 +79,24 @@ function checkFields() {
 
 if (!document.getElementById('userURL').value) {
 
-
-    document.getElementById('userURL').style.borderColor = error_color;
-    document.getElementById('userURL').style.borderStyle = "thick";
-    document.getElementById('userURL').style.borderStyle = "solid";
-
-
-    System.exit();
+    inputError();
 
   }
+
+  else if (document.getElementById('userURL').value.length < 7)
+
+  inputError();
+
+}
+
+
+function inputError() {
+
+  document.getElementById('userURL').style.borderColor = error_color;
+  document.getElementById('userURL').style.borderStyle = "thick";
+  document.getElementById('userURL').style.borderStyle = "solid";
+
+  //ng-click will not active if this is called.
+  System.exit();
 
 }
