@@ -7,7 +7,8 @@ var dark_pink = "#FF8C94";
 $(document).ready(function(){
 
   $(".code").hide();
-  $('.form').hide();
+  $("#textBox").hide();
+
 
   $("#userURL").keyup(function(event){
 
@@ -48,10 +49,16 @@ $(document).ready(function(){
 });
 
 
-function showContent() {
+function showContent(num) {
 
-  $(".code").hide();
+
   $('.code').show(280);
+
+  if (num == 1) {
+
+    $('#textBox').show(200);
+  }
+
 
 }
 

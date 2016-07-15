@@ -69,15 +69,6 @@ li a:hover:not(.active) {
 	float: left;
 }
 
-.rightSide {
-
-	margin-left: 25%;
-	padding: 16px 16px;
-	height: 1000px;
-	width: 770px;
-	float: left;
-
-}
 
 .rightUL {
 
@@ -97,12 +88,6 @@ li a:hover:not(.active) {
 
 }
 
-.code {
-
-float: right;
-position fixed;
-
-}
 
 button {
 	border: none;
@@ -132,5 +117,20 @@ margin-left: 250px;
 
 margin-left: 250px;
 margin-top: 10px;
+
+}
+
+.container {
+
+	width: 100%;
+}
+
+.rightSide {
+
+	margin-left: 25%;
+	padding: 16px 16px;
+	height: 1000px;
+	width: 50%;
+	float: left;
 
 }

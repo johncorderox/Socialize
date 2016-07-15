@@ -27,13 +27,13 @@
           {{subject}}
       </li>
     </ul>
+    <img id = "show"/>
     <div class = "code">
-      <img id = "show"/><br />
-      <input type = "text" size = "39" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" /><br />
+      <input type = "text" size = "39" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" />
       <input type = "button" value = "Get My Code!" ng-click="code()" id = "button" title = "This will give you your code!" /><br />
-      <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
-      </textarea>
   </div>
+  <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
+  </textarea>
 </div>
 <br>
 </div>
@@ -47,9 +47,11 @@ var count = 0;
 $scope.code = function () {
 
 checkFields();
+showContent(1);
 
 //Deviantart
 if (count == 1) {
+
     var usersrc = "http://i68.tinypic.com/537ora.jpg";
     var userLink = document.getElementById('userURL').value;
     var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
