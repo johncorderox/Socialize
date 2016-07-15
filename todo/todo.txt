@@ -13,7 +13,7 @@
 7. problem if a person hits enter for the alert value test function then it will loop
 with the empty field. sigh...
 
-
+8. images are off by 1 in the code [urgent]
 
 
 //==========================================

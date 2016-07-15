@@ -1,28 +1,25 @@
-@font-face {
-
-	font-family: 'NexaBold.otf';
-	src: url(css/fonts/nexa/NexaBold.otf);
-
-}
-
-@font-face {
-
-	font-family: 'NexaLight.otf';
-	src: url(css/fonts/nexa/NexaLight.otf);
-
-}
-
 body {
 
 	margin: 0;
+
 }
 
-h3 {
+h2, h3, li {
 
+font-family: 'Roboto', sans-serif;
 color: #FF8C94;
 
 }
 
+h2 {
+
+	color: black;
+}
+
+p {
+
+	font-family: 'Open Sans', sans-serif;
+}
 input {
 
 	padding: 10px;
@@ -132,5 +129,19 @@ margin-top: 10px;
 	height: 1000px;
 	width: 50%;
 	float: left;
+
+}
+
+.code {
+
+	float: right;
+	margin-left: 600px;
+	width: 50%;
+
+}
+
+.codeContainer {
+
+
 
 }
