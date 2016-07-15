@@ -8,13 +8,6 @@
 
 5. fix angular controllers for organization.
 
-6. Font isn't working
-
-7. problem if a person hits enter for the alert value test function then it will loop
-with the empty field. sigh...
-
-8. images are off by 1 in the code [urgent]
-
 
 //==========================================
 

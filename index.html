@@ -11,6 +11,7 @@
 <div class = "navbar">
   <ul>
     <li><a class = "active" href = "#">Home</a></li>
+    <li><a href = "#">Code Review</a></li>
     <li><a href = "pages/faq.html">FAQ</a></li>
     <li><a href = "pages/suggestions.html">Suggestions</a></li>
     <li><a href = "#">Help us!</a></li>
@@ -66,7 +67,7 @@ if (count == 1) {
 //Facebook
 if (count == 2) {
 
-  var usersrc = "http://i68.tinypic.ora.jpg";
+  var usersrc = "http://i67.tinypic.com/rtomeo.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "facebook";
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
@@ -90,8 +91,9 @@ if (count == 4) {
 
   var usersrc = "http://i64.tinypic.com/fdg5jn.jpg";
   var userLink = document.getElementById('userURL').value;
-  var userAlt = "google";
+  var userAlt = "googleplus";
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  document.getElementById('textBox').value = output;
 
 }
 
@@ -122,8 +124,8 @@ if (count == 7) {
 
   var usersrc = "http://i63.tinypic.com/sz8mxh.jpg";
   var userLink = document.getElementById('userURL').value;
-  var userAlt = "pinterest"
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"</a>";
+  var userAlt = "pinterest";
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -133,7 +135,7 @@ if (count == 8) {
 
   var usersrc = "http://i68.tinypic.com/2us7t05.jpg";
   var userLink = document.getElementById('userURL').value;
-  var useAlt = "reddit";
+  var userAlt = "reddit";
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
   document.getElementById('textBox').value = output;
 
@@ -142,7 +144,7 @@ if (count == 8) {
 //Snapchat
 if (count == 9) {
 
-  var usersrc = "http://tinypic.com/m/jiie0i/2";
+  var usersrc = "http://i63.tinypic.com/am8t2a.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "snapchat";
   var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
@@ -284,41 +286,48 @@ if (count == 15) {
       showContent();
       reset();
       count = 9;
-      document.getElementById('show').src ="icons/Tumblr.png";
+      document.getElementById('show').src ="icons/Snapchat.png";
       break;
 
       case 9:
       showContent();
       reset();
       count = 10;
-      document.getElementById('show').src ="icons/Twitter.png";
+      document.getElementById('show').src ="icons/Tumblr.png";
       break;
 
       case 10:
       showContent();
       reset();
       count = 11;
-      document.getElementById('show').src ="icons/Vine.png";
+      document.getElementById('show').src ="icons/Twitter.png";
       break;
 
       case 11:
       showContent();
       reset();
       count = 12;
-      document.getElementById('show').src ="icons/WhatsApp.png";
+      document.getElementById('show').src ="icons/Vine.png";
       break;
 
       case 12:
       showContent();
       reset();
       count = 13;
-      document.getElementById('show').src ="icons/Yelp.png";
+      document.getElementById('show').src ="icons/WhatsApp.png";
       break;
 
       case 13:
       showContent();
       reset();
       count = 14;
+      document.getElementById('show').src ="icons/Yelp.png";
+      break;
+
+      case 14:
+      showContent();
+      reset();
+      count = 15;
       document.getElementById('show').src ="icons/Youtube.png";
       break;
 
@@ -335,6 +344,7 @@ if (count == 15) {
       'LinkedIn',
       'Pinterest',
       'Reddit',
+      'Snapchat',
       'Tumblr',
       'Twitter',
       'Vine',
