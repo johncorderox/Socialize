@@ -10,6 +10,13 @@ $(document).ready(function(){
   $("#textBox").hide();
 
 
+    $("li").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".code").offset().top
+      }, 1000);
+
+    });
+
 
   $("#userURL").keyup(function(event){
 
@@ -33,7 +40,7 @@ $(document).ready(function(){
 
   });
 
-  $("#button, #button2").hover(function(){
+  $("#button, #button2, #topButton").hover(function(){
 
     $(this).css("color", "white");
 
@@ -78,33 +85,40 @@ function reset() {
   document.getElementById('userURL').value = "";
   document.getElementById('textBox').value = "Your Code will be here!";
 
-  //alert message can pop up again.
-  check = 0;
-
 }
 
 function checkFields() {
 
-if (!document.getElementById('userURL').value) {
+   if (!document.getElementById('userURL').value) {
+
+      inputError();
+
+    }
+
+    else if (document.getElementById('userURL').value.length < 7) {
 
     inputError();
 
-  }
+   }
 
-  else if (document.getElementById('userURL').value.length < 7)
+   else {
 
-  inputError();
+     document.getElementById('userURL').style.borderColor = "";
+     document.getElementById('userURL').style.borderStyle = "";
+     document.getElementById('userURL').style.borderStyle = "";
+
+   }
 
 }
 
+function inputError(number) {
 
-function inputError() {
 
   document.getElementById('userURL').style.borderColor = error_color;
   document.getElementById('userURL').style.borderStyle = "thick";
   document.getElementById('userURL').style.borderStyle = "solid";
 
-  //ng-click will not active if this is called.
-  System.exit();
+    //ng-click will not active if this is called.
+    System.exit();
 
 }
