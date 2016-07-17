@@ -8,6 +8,9 @@
 
 5. fix angular controllers for organization.
 
+6. create back to top scroll in jQuery
+
+7. height and width not restting.
 
 //==========================================
 

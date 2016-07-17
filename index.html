@@ -37,6 +37,7 @@
     <input type = "text" size = "17" placeholder="height" id = "userHeight" title = "height of your image[optional]" />
     <input type = "text" size = "40" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" /><br />
     <input type = "button" value = "Get My Code!" ng-click="code()" id = "button" title = "This will give you your code!" />
+    <input type = "button" value = "Change Size" id = "sizeButton" title = "You can change button size here!" />
     <input type = "button" value = "Back to Top" id = "topButton" title = "Back to the main menu" /><br />
     <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
     </textarea>
@@ -63,8 +64,10 @@ if (count == 1) {
 
     var usersrc = "http://i68.tinypic.com/537ora.jpg";
     var userLink = document.getElementById('userURL').value;
-    var userAlt = "deviantart"
-    var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+    var userAlt = "deviantart";
+    var userHeight = document.getElementById('userHeight').value;
+    var userWidth = document.getElementById('userWidth').value;
+    var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
     document.getElementById('textBox').value = output;
 
 }

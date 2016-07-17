@@ -8,6 +8,8 @@ $(document).ready(function(){
 
   $(".code").hide();
   $("#textBox").hide();
+  $('#userHeight').hide();
+  $('#userWidth').hide();
 
 
     $("li").click(function() {
@@ -28,6 +30,13 @@ $(document).ready(function(){
 
   });
 
+  $('#sizeButton').click(function(){
+
+    $('#userHeight').fadeToggle();
+    $('#userWidth').fadeToggle();
+
+  });
+
   $("li").mouseenter(function(){
 
     $(this).css("color","black");
@@ -40,7 +49,7 @@ $(document).ready(function(){
 
   });
 
-  $("#button, #button2, #topButton").hover(function(){
+  $("#button, #button2, #topButton, #sizeButton").hover(function(){
 
     $(this).css("color", "white");
 
@@ -61,6 +70,7 @@ function showContent(num) {
 
 
   $('.code').show(280);
+  $('#userHeight, #userWidth').hide();
 
   if (num == 1) {
 
@@ -83,7 +93,9 @@ function reset() {
   document.getElementById('userURL').style.borderStyle = "";
   document.getElementById('userURL').style.borderStyle = "";
   document.getElementById('userURL').value = "";
-  document.getElementById('textBox').value = "Your Code will be here!";
+  document.getElementById('userHeight').value = "";
+  document.getElementById('userWidth').value = "";
+  document.getElementById('textBox').value = "";
 
 }
 
