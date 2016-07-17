@@ -38,7 +38,7 @@
     <input type = "text" size = "40" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" /><br />
     <input type = "button" value = "Get My Code!" ng-click="code()" id = "button" title = "This will give you your code!" />
     <input type = "button" value = "Change Size" id = "sizeButton" title = "You can change button size here!" />
-    <input type = "button" value = "Back to Top" id = "topButton" title = "Back to the main menu" /><br />
+    <input type = "button" value = "Back to Top" id = "topButton" onclick="toTop()" title = "Back to the main menu" /><br />
     <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
     </textarea>
 </div>
@@ -78,7 +78,9 @@ if (count == 2) {
   var usersrc = "http://i67.tinypic.com/rtomeo.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "facebook";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -89,7 +91,9 @@ if (count == 3) {
   var usersrc = "http://i64.tinypic.com/2cwpk5y.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "github";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -100,7 +104,9 @@ if (count == 4) {
   var usersrc = "http://i64.tinypic.com/fdg5jn.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "googleplus";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -111,7 +117,9 @@ if (count == 5) {
   var usersrc = "http://i67.tinypic.com/30s97b7.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "instagram";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -122,7 +130,9 @@ if (count == 6) {
   var usersrc = "http://i67.tinypic.com/rrr1uc.jpg";
   var userLink = document.getElementById('userURL').value;
   var useAlt = "linkedin"
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -133,7 +143,9 @@ if (count == 7) {
   var usersrc = "http://i63.tinypic.com/sz8mxh.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "pinterest";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -144,7 +156,9 @@ if (count == 8) {
   var usersrc = "http://i68.tinypic.com/2us7t05.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "reddit";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -155,7 +169,9 @@ if (count == 9) {
   var usersrc = "http://i63.tinypic.com/am8t2a.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "snapchat";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -166,7 +182,9 @@ if (count == 10) {
   var usersrc = "http://i68.tinypic.com/fo3f2o.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "tumblr";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -177,7 +195,9 @@ if (count == 11) {
   var usersrc = "http://i66.tinypic.com/2cz65wk.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "twitter";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -188,7 +208,9 @@ if (count == 12) {
   var usersrc = "http://i66.tinypic.com/r7ofgk.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "vine";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -199,7 +221,9 @@ if (count == 13) {
   var usersrc = "http://i66.tinypic.com/scs7wz.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "whatsapp";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -210,7 +234,9 @@ if (count == 14) {
   var usersrc = "http://i64.tinypic.com/35i6kww.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "yelp";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }
@@ -221,7 +247,9 @@ if (count == 15) {
   var usersrc = "http://i64.tinypic.com/2zsb49g.jpg";
   var userLink = document.getElementById('userURL').value;
   var userAlt = "youtube";
-  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"</a>";
+  var userHeight = document.getElementById('userHeight').value;
+  var userWidth = document.getElementById('userWidth').value;
+  var output = "<a href=\"" + userLink + "\">" + "<img src =\""+ usersrc + "\"alt=\""+ userAlt+ "\"height=\""+userHeight+"\"width=\""+userWidth+"\"</a>";
   document.getElementById('textBox').value = output;
 
 }

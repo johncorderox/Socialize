@@ -80,6 +80,12 @@ function showContent(num) {
 
 }
 
+function toTop() {
+
+window.scrollTo(0,0);
+
+}
+
 function switchError() {
 
     alert("Error while processing link. Please contact the website administrator.");
