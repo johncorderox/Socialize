@@ -49,7 +49,7 @@ $(document).ready(function(){
 
   });
 
-  $("#button, #button2, #topButton, #sizeButton").hover(function(){
+  $("#button, #button2, #topButton, #sizeButton, #resetButton").hover(function(){
 
     $(this).css("color", "white");
 
@@ -70,11 +70,13 @@ function showContent(num) {
 
 
   $('.code').show(280);
+
   $('#userHeight, #userWidth').hide();
 
   if (num == 1) {
 
     $('#textBox').show(200);
+    $('#userHeight, #userWidth').show();
   }
 
 
