@@ -113,6 +113,7 @@ function checkFields() {
 
       inputError();
 
+
     }
 
     else if (document.getElementById('userURL').value.length < 7) {
@@ -120,6 +121,21 @@ function checkFields() {
     inputError();
 
    }
+
+   else if (document.getElementById('userHeight').value.length < 400 || document.getElementById('userWidth').value.length < 400) {
+
+      alert("ok");
+/*
+                 document.getElementById('userHeight').style.borderColor = error_color;
+                 document.getElementById('userHeight').style.borderStyle = "thick";
+                 document.getElementById('userHeight').style.borderStyle = "solid";
+                 document.getElementById('userWidth').style.borderColor = error_color;
+                 document.getElementById('userWidth').style.borderStyle = "thick";
+                 document.getElementById('userWidth').style.borderStyle = "solid";
+*/
+   }
+
+
 
    else {
 
@@ -131,14 +147,13 @@ function checkFields() {
 
 }
 
-function inputError(number) {
+function inputError() {
 
+            document.getElementById('userURL').style.borderColor = error_color;
+            document.getElementById('userURL').style.borderStyle = "thick";
+            document.getElementById('userURL').style.borderStyle = "solid";
 
-  document.getElementById('userURL').style.borderColor = error_color;
-  document.getElementById('userURL').style.borderStyle = "thick";
-  document.getElementById('userURL').style.borderStyle = "solid";
-
-    //ng-click will not active if this is called.
-    System.exit();
+            //ng-click will not active if this is called.
+            System.exit();
 
 }
