@@ -4,6 +4,8 @@ var orange_color = "#FFD3B5";
 var dark_pink = "#FF8C94";
 
 
+
+
 $(document).ready(function(){
 
   $(".code").hide();
@@ -31,6 +33,7 @@ $(document).ready(function(){
   });
 
   $('#sizeButton').click(function(){
+
 
     $('#userHeight').fadeToggle();
     $('#userWidth').fadeToggle();
@@ -121,20 +124,6 @@ function checkFields() {
     inputError();
 
    }
-
-   else if (document.getElementById('userHeight').value.length < 400 || document.getElementById('userWidth').value.length < 400) {
-
-      alert("ok");
-/*
-                 document.getElementById('userHeight').style.borderColor = error_color;
-                 document.getElementById('userHeight').style.borderStyle = "thick";
-                 document.getElementById('userHeight').style.borderStyle = "solid";
-                 document.getElementById('userWidth').style.borderColor = error_color;
-                 document.getElementById('userWidth').style.borderStyle = "thick";
-                 document.getElementById('userWidth').style.borderStyle = "solid";
-*/
-   }
-
 
 
    else {
