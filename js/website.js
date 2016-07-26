@@ -3,7 +3,14 @@ var border_color = "#bfbfbf";
 var orange_color = "#FFD3B5";
 var dark_pink = "#FF8C94";
 
+var recommened = [
 
+  'You can change the size of the icon if you like. Just click the change size button',
+  'If you change icon size, its recommened to not go over 400 x 400 px',
+  'When you copy and paste your code, try to add it to your homepage for better contact!',
+  'If you mess up, just click reset fields to start over.'
+
+];
 
 
 $(document).ready(function(){
@@ -79,7 +86,7 @@ function showContent(num) {
   if (num == 1) {
 
     $('#textBox').show(200);
-    $('#userHeight, #userWidth').show();
+    
   }
 
 
