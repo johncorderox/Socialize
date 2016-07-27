@@ -12,6 +12,11 @@ var recommened = [
 
 ];
 
+function check() {
+
+document.getElementById('error').value = "changed!";
+
+}
 
 $(document).ready(function(){
 
@@ -123,7 +128,7 @@ function checkFields() {
 
    if (!document.getElementById('userURL').value) {
 
-      inputError();;
+      inputError();
 
 
     }
