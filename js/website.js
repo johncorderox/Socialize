@@ -86,7 +86,7 @@ function showContent(num) {
   if (num == 1) {
 
     $('#textBox').show(200);
-    
+
   }
 
 
@@ -114,6 +114,8 @@ function reset() {
   document.getElementById('userHeight').value = "";
   document.getElementById('userWidth').value = "";
   document.getElementById('textBox').value = "";
+
+  $('#textBox').hide();
 
 }
 
