@@ -123,7 +123,7 @@ function checkFields() {
 
    if (!document.getElementById('userURL').value) {
 
-      inputError();
+      inputError();;
 
 
     }
