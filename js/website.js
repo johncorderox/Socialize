@@ -12,6 +12,11 @@ var recommened = [
 
 ];
 
+function check() {
+
+document.getElementById('error').value = "changed!";
+
+}
 
 $(document).ready(function(){
 
