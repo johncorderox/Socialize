@@ -1,0 +1,29 @@
+{
+  "name": "Socialize",
+  "homepage": "https://github.com/Amanguchi/Socialize",
+  "authors": [
+    "Amanguchi <johncorderox@gmail.com>"
+  ],
+  "description": "social media icon generator",
+  "main": "index.html",
+  "keywords": [
+    "social",
+    "media",
+    "icon",
+    "generator",
+    "fast",
+    "code"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -216,7 +216,6 @@ if (count == 15) {
         reset();
         count = 1;
         document.getElementById('show').src ="icons/Deviantart.png";
-        document.getElementById('info').value = "Degian";
         break;
 
       case 1:
@@ -338,7 +337,6 @@ if (count == 15) {
       {name: 'WhatsApp', type: 'social'},
       {name: 'Yelp', type: 'food'},
       {name: 'Youtube', type: 'social', type: 'video', type: 'share'}
-
 
   ];
 

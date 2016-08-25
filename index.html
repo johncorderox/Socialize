@@ -1,29 +1,28 @@
 <!doctype html>
 <html lang = "en">
   <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <script type='text/javascript' src='js/website.js'></script>
-    <script type = 'text/javascript' src = 'js/angular/angular.min.js'></script>
 </head>
   <body>
 <div class = "navbar">
   <ul>
     <li><a class = "active" href = "#">Home</a></li>
-    <li><a href = "pages/faq.html">FAQ</a></li>
-    <li><a href = "pages/suggestions.html">Suggestions</a></li>
+    <li><a href = "#">FAQ</a></li>
+    <li><a href = "#">Suggestions</a></li>
     <li><a href = "#">Help us!</a></li>
   </ul>
 </div>
-  </body>
-<div class = "container">
-<div class = "rightSide">
-  <h2>Socialize</h2>
-  <div ng-app = "socialApp" ng-controller = "MainController">
-   <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'"
-     size = "40" />
+</body>
+  <div class = "container">
+    <div class = "rightSide">
+    <h2>Socialize</h2>
+      <div ng-app = "socialApp" ng-controller = "MainController">
+      <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" size = "40" />
       <ul class = "rightUL">
         <li ng-repeat = "subject in subjects | filter:search" | ng-click = "detectClick(subject)" >
             {{subject.name}}
@@ -31,7 +30,6 @@
     </ul>
 <div id = "page2">
   <div class = "code">
-    <hr />
       <img id = "show"/><br />
       <input type = "text" size = "17" placeholder="width" id = "userWidth" title = "width of your image[optional]" />
       <input type = "text" size = "17" placeholder="height" id = "userHeight" title = "height of your image[optional]" /><br />
