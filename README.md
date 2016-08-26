@@ -4,6 +4,7 @@
 <b>workflow</b> - newer branch that will be undergoing changes, known as v2.
 <br>
 Feel free to check under the branch tab for progress!
+<hr>
 <br>
 # Socialize
 
