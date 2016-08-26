@@ -67,11 +67,6 @@ li a:hover:not(.active) {
 	float: left;
 }
 
-.faqbody {
-
-	font-size: 15px;
-}
-
 .rightUL {
 
 	color: #FF8C94;
@@ -116,11 +111,6 @@ margin-left: 250px;
 margin-left: 250px;
 margin-top: 10px;
 
-}
-
-.container {
-
-	width: 100%;
 }
 
 .rightSide {
