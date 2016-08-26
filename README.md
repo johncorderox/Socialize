@@ -1,4 +1,12 @@
+[Note] As much as I loved this project, I have decided that I will be redesigning it day by day to enhance the design + angular code. The site is functional but a bit messy.<br>
+<h4>Branch List</h4>
+<b>master</b> - contains a fully functional code base, known as v1.<br>
+<b>workflow</b> - newer branch that will be undergoing changes, known as v2.
+<br>
+Feel free to check under the branch tab for progress!
+<br>
 # Socialize
+
 Socialize was made for people to aid them in creating hyperlink based images in HTML. Simply click on the desired social media site and enter your URL!
 <br>Socialize will give you your code for your website instantly.
 
