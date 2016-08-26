@@ -3420,7 +3420,7 @@ forEach({
         return this;
       } else {
         // we are a read, so read the first child.
-        // TODO: do we still need this?
+        // TODO:150 do we still need this?
         var value = fn.$dv;
         // Only if we have $dv do we iterate over all, otherwise it is just the first element.
         var jj = (isUndefined(value)) ? Math.min(nodeCount, 1) : nodeCount;
@@ -3487,7 +3487,7 @@ function createEventHandler(element, events) {
     }
   };
 
-  // TODO: this is a hack for angularMocks/clearDataCache that makes it possible to deregister all
+  // TODO:230 this is a hack for angularMocks/clearDataCache that makes it possible to deregister all
   //       events on `element`
   eventHandler.elem = element;
   return eventHandler;
@@ -3916,7 +3916,7 @@ function stringifyFn(fn) {
   // Support: Chrome 50-51 only
   // Creating a new string by adding `' '` at the end, to hack around some bug in Chrome v50/51
   // (See https://github.com/angular/angular.js/issues/14487.)
-  // TODO (gkalpak): Remove workaround when Chrome v52 is released
+  // TODO:0 (gkalpak): Remove workaround when Chrome v52 is released
   return Function.prototype.toString.call(fn) + ' ';
 }
 
@@ -8213,7 +8213,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
        * @param {string=} attrName Optional none normalized name. Defaults to key.
        */
       $set: function(key, value, writeAttr, attrName) {
-        // TODO: decide whether or not to throw an error if "class"
+        // TODO:130 decide whether or not to throw an error if "class"
         //is set through this function since it may cause $updateClass to
         //become unstable.
 
@@ -8503,7 +8503,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
     }
 
     function detectNamespaceForChildElements(parentElement) {
-      // TODO: Make this detect MathML as well...
+      // TODO:60 Make this detect MathML as well...
       var node = parentElement && parentElement[0];
       if (!node) {
         return 'html';
@@ -8990,7 +8990,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
             // being referenced by the `parentNode` property of all of the child nodes.  By adding
             // a reference to the fragment via a different property, we can avoid that incorrect
             // behavior.
-            // TODO: remove this line after Chrome 50 has been released
+            // TODO:220 remove this line after Chrome 50 has been released
             $template[0].$$parentNode = $template[0].parentNode;
 
             childTranscludeFn = compilationGenerator(mightHaveMultipleTransclusionError, $template, transcludeFn, terminalPriority,
@@ -12201,7 +12201,7 @@ function $InterpolateProvider() {
       return value;
     }
 
-    //TODO: this is the same as the constantWatchDelegate in parse.js
+    //TODO:240 this is the same as the constantWatchDelegate in parse.js
     function constantWatchDelegate(scope, listener, objectEquality, constantInterp) {
       var unwatch;
       return unwatch = scope.$watch(function constantInterpolateWatch(scope) {
@@ -14490,7 +14490,7 @@ AST.prototype = {
   },
 
   constant: function() {
-    // TODO check that it is a constant
+    // TODO:120 check that it is a constant
     return { type: AST.Literal, value: this.consume().value };
   },
 

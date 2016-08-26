@@ -19,3 +19,11 @@ after clicking the links more than once the spacing is off. Check jQuery scrollT
 -Home:
 
 after clicking a link and going home it will NOT move.
+
+-searchbox:
+
+would be cool to add list of sites in an array and randomize each page load
+
+ex:
+
+try social[6] or even social[13]
