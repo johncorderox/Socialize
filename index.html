@@ -8,14 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 <body>
-  <div class="row">
-    <div class="lg-col-6">
+
       <div class="title">
         <h2 id="title">Socialize</h2>
       </div>
     </div>
-  </div>
-  <div class="lg-col-6">
+
+
     <div class="main-content">
     <div ng-app = "socialApp" ng-controller = "MainController">
   <!--  <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" size = "40" /> -->
@@ -26,26 +25,15 @@
     </ul>
 </div>
 </div>
-  </div>
-
 
 </body>
-<div id = "page2">
-  <div class = "code">
-      <img id = "show"/><br />
-      <input type = "text" size = "17" placeholder="width" id = "userWidth" title = "width of your image[optional]" />
-      <input type = "text" size = "17" placeholder="height" id = "userHeight" title = "height of your image[optional]" /><br />
       <input type = "text" size = "40" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" /><br />
       <input type = "button" value = "Get My Code!" ng-click="code()" id = "button" title = "This will give you your code!" />
-      <input type = "button" value = "Change Size" id = "sizeButton" title = "You can change button size here!" />
-      <input type = "button" value = "Reset Fields" id = "resetButton" onclick="reset()" title = "Remove your input" />
+
       <input type = "button" value = "Back to Top" id = "topButton" onclick="toTop()" title = "Back to the main menu" /><br />
       <textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
       </textarea>
-      </div>
-    </div>
-   </div>
-  </div>
+
   <!-- Modules -->
   <script src="js/app.js"></script>
 

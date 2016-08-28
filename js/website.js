@@ -3,35 +3,10 @@ var border_color = "#bfbfbf";
 var orange_color = "#FFD3B5";
 var dark_pink = "#FF8C94";
 
-var recommened = [
 
-  'You can change the size of the icon if you like. Just click the change size button',
-  'If you change icon size, its recommened to not go over 400 x 400 px',
-  'When you copy and paste your code, try to add it to your homepage for better contact!',
-  'If you mess up, just click reset fields to start over.'
-
-];
-
-function check() {
-
-document.getElementById('error').value = "changed!";
-
-}
 
 $(document).ready(function(){
 
-  $(".code").hide();
-  $("#textBox").hide();
-  $('#userHeight').hide();
-  $('#userWidth').hide();
-
-
-    $("li").click(function() {
-      $('html, body').animate({
-          scrollTop: $(".code").offset().top
-      }, 1000);
-
-    });
 
 
   $("#userURL").keyup(function(event){
@@ -64,19 +39,6 @@ $(document).ready(function(){
 
   });
 
-  $("#button, #button2, #topButton, #sizeButton, #resetButton").hover(function(){
-
-    $(this).css("color", "white");
-
-  },function() {
-
-    $(this).css("color","black");
-
-
-  });
-
-  $('.form').fadeIn(1680);
-
 
 });
 
@@ -97,11 +59,6 @@ function showContent(num) {
 
 }
 
-function toTop() {
-
-window.scrollTo(0,0);
-
-}
 
 function switchError() {
 

@@ -1,14 +1,7 @@
 
-h2, h3{
-
-font-family: 'Roboto', sans-serif;
-
-
-}
-
-
 h2 {
 
+	font-family: 'Roboto', sans-serif;
 	color: black;
 }
 
@@ -21,6 +14,7 @@ li {
 
 	list-style-type: none;
 	color: #FF8C94;
+
 
 }
 
@@ -36,13 +30,15 @@ li {
 	height: 100%;
 	top: 47%;
 	bottom: 47%;
+	left: 0%;
+	right: 0%;
 
 }
 
 .main-content {
 
 	margin-top: 15px;
-	margin-left: 580px;
+	margin-left: 630px;
 	height: 1000px;
 	font-size: 30px;
 
