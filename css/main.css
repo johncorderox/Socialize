@@ -1,13 +1,8 @@
-body {
 
-	margin: 0;
-
-}
-
-h2, h3, li {
+h2, h3{
 
 font-family: 'Roboto', sans-serif;
-color: #FF8C94;
+
 
 }
 
@@ -25,5 +20,30 @@ p {
 li {
 
 	list-style-type: none;
+	color: #FF8C94;
+
+}
+
+.title h2 {
+
+	font-size: 60px;
+}
+
+.title {
+
+	margin-left: 270px;
+	position: fixed;
+	height: 100%;
+	top: 47%;
+	bottom: 47%;
+
+}
+
+.main-content {
+
+	margin-top: 15px;
+	margin-left: 580px;
+	height: 1000px;
+	font-size: 30px;
 
 }

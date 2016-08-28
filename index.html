@@ -8,17 +8,27 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 <body>
-  <div class="main-content">
-    <h2>Socialize</h2>
-      <div ng-app = "socialApp" ng-controller = "MainController">
-      <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" size = "40" />
-      <ul class = "rightUL">
-        <li ng-repeat = "subject in subjects | filter:search" | ng-click = "detectClick(subject)" >
-        {{subject.name}}
-        </li>
-      </ul>
+  <div class="row">
+    <div class="lg-col-6">
+      <div class="title">
+        <h2 id="title">Socialize</h2>
+      </div>
+    </div>
   </div>
+  <div class="lg-col-6">
+    <div class="main-content">
+    <div ng-app = "socialApp" ng-controller = "MainController">
+  <!--  <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" size = "40" /> -->
+    <ul class = "rightUL">
+      <li ng-repeat = "subject in subjects | filter:search" | ng-click = "detectClick(subject)" >
+      {{subject.name}}
+      </li>
+    </ul>
 </div>
+</div>
+  </div>
+
+
 </body>
 <div id = "page2">
   <div class = "code">
