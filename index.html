@@ -3,21 +3,21 @@
   <head>
     <script src="components/angular/angular.min.js"></script>
     <script src="components/jquery/dist/jquery.min.js"></script>
+    <script src="components/angular/angular-route.min.js"></script>
     <link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 <body>
-
-      <div class="title">
-        <h2 id="title">Socialize</h2>
+        <div class="title">
+        <h2 id="title"><span id="s-trigger">S</span>ocialize</h2>
+        <input id="searchbox" type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" />
       </div>
     </div>
-
-
     <div class="main-content">
     <div ng-app = "socialApp" ng-controller = "MainController">
-  <!--  <input type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" size = "40" /> -->
+
+
     <ul class = "rightUL">
       <li ng-repeat = "subject in subjects | filter:search" | ng-click = "detectClick(subject)" >
       {{subject.name}}
@@ -25,16 +25,7 @@
     </ul>
 </div>
 </div>
-
 </body>
-<!--
-<input type = "text" size = "40" placeholder = "Your URL*" id = "userURL" title = "This is where you put your URL to add!" /><br />
-<input type = "button" value = "Get My Code!" ng-click="code()" id = "button" title = "This will give you your code!" />
-
-<input type = "button" value = "Back to Top" id = "topButton" onclick="toTop()" title = "Back to the main menu" /><br />
-<textarea rows = "6" cols = "40" id = "textBox">Your Code will be here!
-</textarea>
--->
   <!-- Modules -->
   <script src="js/app.js"></script>
 

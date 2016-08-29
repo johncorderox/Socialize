@@ -15,6 +15,7 @@ li {
 	list-style-type: none;
 	color: #FF8C94;
 	margin-top: 6px;
+	cursor: pointer;
 
 
 }
@@ -26,9 +27,23 @@ color: black;
 
 }
 
+#s-trigger:Hover {
+
+color: #FF8C94;
+
+}
+
+#searchbox {
+
+	width: 360px;
+	padding: 10px;
+	
+}
+
 .title h2 {
 
 	font-size: 60px;
+
 }
 
 .title {

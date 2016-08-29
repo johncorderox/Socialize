@@ -6,6 +6,7 @@ var dark_pink = "#FF8C94";
 
 $(document).ready(function(){
 
+  $('#searchbox').hide();
 
   $("#userURL").keyup(function(event){
 
@@ -16,5 +17,11 @@ $(document).ready(function(){
     }
 
   });
+
+  $("#s-trigger").click(function(){
+
+    $('#searchbox').show();
+
+  })
 
 });
