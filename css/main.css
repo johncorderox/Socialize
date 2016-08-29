@@ -14,9 +14,11 @@ li {
 
 	list-style-type: none;
 	color: #FF8C94;
+	margin-top: 6px;
 
 
 }
+
 
 .title h2 {
 
@@ -25,7 +27,7 @@ li {
 
 .title {
 
-	margin-left: 270px;
+	margin-left: 240px;
 	position: fixed;
 	height: 100%;
 	top: 47%;
