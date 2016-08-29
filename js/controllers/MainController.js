@@ -3,12 +3,12 @@ app.controller('MainController', ['$scope', function($scope) {
 
   $scope.detectClick = function(subject) {
 
-
+/*
     var clickedSubject = $scope.subjects.indexOf(subject);
     switch (clickedSubject) {
 
-
-    }
+*/
+    
   }
   $scope.subjects = [
 

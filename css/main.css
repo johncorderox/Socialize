@@ -19,6 +19,12 @@ li {
 
 }
 
+li:Hover {
+
+color: black;
+
+
+}
 
 .title h2 {
 
@@ -27,9 +33,9 @@ li {
 
 .title {
 
-	margin-left: 240px;
+	margin-left: 230px;
 	position: fixed;
-	height: 100%;
+	width: 360px;
 	top: 47%;
 	bottom: 47%;
 	left: 0%;
@@ -41,7 +47,6 @@ li {
 
 	margin-top: 15px;
 	margin-left: 630px;
-	height: 1000px;
 	font-size: 30px;
 
 }
