@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang = "en">
-  <head>
+<html lang="en">
+
+<head>
     <script src="components/angular/angular.min.js"></script>
     <script src="components/jquery/dist/jquery.min.js"></script>
     <script src="components/angular/angular-route.min.js"></script>
@@ -8,31 +9,31 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
+
 <body>
+    <div ng-app="socialApp" ng-controller="MainController">
         <div class="title">
-        <h2 id="title"><span id="s-trigger">S</span>ocialize</h2>
-        <input id="searchbox" type = "text" ng-model = "search" placeholder=" Try 'twitter or even 'github'" />
-      </div>
+            <h2 id="title"><span id="s-trigger">S</span>ocialize</h2>
+            <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
+        </div>
+        <div class="main-content">
+            <ul class="rightUL">
+                <li ng-repeat="subject in subjects | filter:search" | ng-click="detectClick(subject)">
+                    {{subject.name}}
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="main-content">
-    <div ng-app = "socialApp" ng-controller = "MainController">
 
-
-    <ul class = "rightUL">
-      <li ng-repeat = "subject in subjects | filter:search" | ng-click = "detectClick(subject)" >
-      {{subject.name}}
-      </li>
-    </ul>
-</div>
-</div>
 </body>
-  <!-- Modules -->
-  <script src="js/app.js"></script>
+<!-- Modules -->
+<script src="js/app.js"></script>
 
-  <!-- Controllers -->
-  <script src="js/controllers/MainController.js"></script>
+<!-- Controllers -->
+<script src="js/controllers/MainController.js"></script>
 
-  <!-- Javascript -->
-  <script type='text/javascript' src='js/website.js'></script>
- </body>
+<!-- Javascript -->
+<script type='text/javascript' src='js/website.js'></script>
+</body>
+
 </html>

@@ -1,67 +1,69 @@
-
 h2 {
-
-	font-family: 'Roboto', sans-serif;
-	color: black;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 p {
-
-	font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 li {
-
-	list-style-type: none;
-	color: #FF8C94;
-	margin-top: 6px;
-	cursor: pointer;
-
-
+    list-style-type: none;
+    color: #FF8C94;
+    margin-top: 6px;
+    cursor: pointer;
 }
 
 li:Hover {
-
-color: black;
-
-
+    color: black;
 }
 
 #s-trigger:Hover {
-
-color: #FF8C94;
-
+    color: #FF8C94;
 }
 
 #searchbox {
+    width: 360px;
+    padding: 10px;
+}
 
-	width: 360px;
-	padding: 10px;
-	
+code-form {
+    width: 300px;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    background: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 300px;
 }
 
 .title h2 {
-
-	font-size: 60px;
-
+    font-size: 60px;
 }
 
 .title {
-
-	margin-left: 230px;
-	position: fixed;
-	width: 360px;
-	top: 47%;
-	bottom: 47%;
-	left: 0%;
-	right: 0%;
-
+    margin-left: 230px;
+    position: fixed;
+    width: 360px;
+    top: 47%;
+    bottom: 47%;
+    left: 0%;
+    right: 0%;
 }
 
 .main-content {
+    margin-top: 15px;
+    margin-left: 630px;
+    font-size: 30px;
+}
 
-	margin-top: 15px;
-	margin-left: 630px;
-	font-size: 30px;
-
+.invalid-box {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid red;
 }

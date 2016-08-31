@@ -13,6 +13,13 @@ app.controller('MainController', ['$scope', function($scope) {
 
   }
 }
+
+$scope.searchdecoration = function() {
+  /* placeholder for random social search box genorator */
+
+
+}
+
   $scope.subjects = [
 
       {name: 'Deviantart'},

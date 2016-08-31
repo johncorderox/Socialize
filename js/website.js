@@ -2,26 +2,29 @@ var error_color = "#ff1a1a";
 var border_color = "#bfbfbf";
 var dark_pink = "#FF8C94";
 
+var trigger = 0;
 
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $('#searchbox').hide();
 
-  $("#userURL").keyup(function(event){
+    $("#userURL").keyup(function(event) {
 
-    if (event.keyCode == 13) {
+        if (event.keyCode == 13) {
 
-      $('#button').click();
+            $('#button').click();
 
-    }
+        }
 
-  });
+    });
 
-  $("#s-trigger").click(function(){
+    $("#s-trigger").click(function() {
 
-    $('#searchbox').show();
 
-  })
+        $('#searchbox').toggle("slow");
+
+
+    });
+
 
 });
