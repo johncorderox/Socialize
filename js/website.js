@@ -7,6 +7,7 @@ var trigger = 0;
 
 $(document).ready(function() {
 
+    $('#userURL , #userbutton').hide();
 
     $("#userURL").keyup(function(event) {
 
@@ -28,3 +29,11 @@ $(document).ready(function() {
 
 
 });
+
+function showcode() {
+
+    $('#userURL , #userbutton').toggle();
+    $('#searchbox').toggle();
+    $('.title').toggleClass("animated_top");
+    
+}

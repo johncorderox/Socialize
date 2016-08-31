@@ -18,6 +18,32 @@ li:Hover {
     color: black;
 }
 
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 40px;
+    margin: 15px 30px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button:Hover {
+    opacity: 0.5;
+    color: black;
+}
+
+button:active {
+    opacity: 0;
+    color: white;
+}
+
 #s-trigger:Hover {
     color: #FF8C94;
 }
@@ -38,14 +64,14 @@ input {
     outline: 0;
     border: 0;
     border-bottom: 2px solid black;
-    width: 300px;
+    width: 360px;
 }
 
 .title h2 {
     font-size: 60px;
 }
 
-.title {
+.title, .movement-section {
     margin-left: 230px;
     position: fixed;
     width: 360px;
@@ -66,4 +92,8 @@ input {
     outline: 0;
     background: transparent;
     border-bottom: 2px solid red;
+}
+
+.animated_top {
+    top: 200px;
 }

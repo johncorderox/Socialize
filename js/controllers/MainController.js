@@ -1,5 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
 
+
   $scope.detectClick = function(subject) {
 
 
@@ -9,15 +10,11 @@ app.controller('MainController', ['$scope', function($scope) {
 
     case 0:
 
+      showcode();
+
     break;
 
   }
-}
-
-$scope.searchdecoration = function() {
-  /* placeholder for random social search box genorator */
-
-
 }
 
   $scope.subjects = [
