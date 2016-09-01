@@ -7,13 +7,13 @@ var trigger = 0;
 
 $(document).ready(function() {
 
-    $('#userURL , #userbutton').hide();
+    $('#userURL , #userbutton, #final').hide();
 
     $("#userURL").keyup(function(event) {
 
         if (event.keyCode == 13) {
 
-            $('#button').click();
+            $('#userbutton').click();
 
         }
 
@@ -35,5 +35,5 @@ function showcode() {
     $('#userURL , #userbutton').toggle();
     $('#searchbox').toggle();
     $('.title').toggleClass("animated_top");
-    
+
 }

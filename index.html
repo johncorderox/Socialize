@@ -15,11 +15,13 @@
         <div class="title">
             <h2 id="title"><span id="s-trigger">S</span>ocialize</h2>
             <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
-          </div>
-          <div class="movement-section">
-            <input type = "text" placeholder = "Your URL*" id = "userURL" ng-click="code"/><br />
-            <button id="userbutton">Get My Code</button>
-            </div>
+        </div>
+        <div class="movement-section">
+            <p id="error-output"></p>
+            <input type="text" placeholder="Your URL*" id="userURL" /><br />
+            <textarea id="final"></textarea><br />
+            <button id="userbutton" ng-click="code()" >Get My Code</button>
+        </div>
         <div class="main-content">
             <ul class="rightUL">
                 <li ng-repeat="subject in subjects | filter:search" | ng-click="detectClick(subject)">

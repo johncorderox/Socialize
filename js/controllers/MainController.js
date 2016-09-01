@@ -1,50 +1,102 @@
 app.controller('MainController', ['$scope', function($scope) {
 
+    $scope.validaton = function() {
 
-  $scope.detectClick = function(subject) {
+        var input = document.getElementById('userURL').value;
+        var error = document.getElementById('error-output');
+
+        if (!input) {
+
+            error.innerHTML = "Your URL contents are empty.";
+            $('#userURL').addClass('invalid-box');
+
+        } else if (input.length < 7) {
+
+            error.innerHTML = "Not a valid URL!";
+            $('#userURL').addClass('invalid-box');
+        } else {
+
+            error.innerHTML = "";
+            $('#userURL').removeClass('invalid-box');
+
+        }
 
 
-    var clickedSubject = $scope.subjects.indexOf(subject);
-    switch (clickedSubject) {
+    }
+
+    $scope.code = function() {
+
+        $scope.validaton();
+    }
 
 
-    case 0:
+    $scope.detectClick = function(subject) {
 
-      showcode();
 
-    break;
+        var clickedSubject = $scope.subjects.indexOf(subject);
+        switch (clickedSubject) {
 
-  }
-}
 
-  $scope.subjects = [
+            case 0:
+                showcode();
+                break;
 
-      {name: 'Deviantart'},
-      {name: 'Email'},
-      {name: 'Facebook'},
-      {name: 'Flickr'},
-      {name: 'Foursquare'},
-      {name: 'Github'},
-      {name: 'Google +'},
-      {name: 'Instagram'},
-      {name: 'LinkedIn'},
-      {name: 'Myspace'},
-      {name: 'Nintendo Network ID'},
-      {name: 'Periscope'},
-      {name: 'Pinterest'},
-      {name: 'Playstation Network'},
-      {name: 'Quora'},
-      {name: 'Reddit'},
-      {name: 'Snapchat'},
-      {name: 'Skype'},
-      {name: 'Tumblr'},
-      {name: 'Twitter'},
-      {name: 'Vine'},
-      {name: 'WhatsApp'},
-      {name: 'Yelp'},
-      {name: 'Youtube'}
+        }
+    }
 
-  ];
+    $scope.subjects = [
+
+        {
+            name: 'Deviantart'
+        }, {
+            name: 'Email'
+        }, {
+            name: 'Facebook'
+        }, {
+            name: 'Flickr'
+        }, {
+            name: 'Foursquare'
+        }, {
+            name: 'Github'
+        }, {
+            name: 'Google +'
+        }, {
+            name: 'Instagram'
+        }, {
+            name: 'LinkedIn'
+        }, {
+            name: 'Myspace'
+        }, {
+            name: 'Nintendo Network ID'
+        }, {
+            name: 'Periscope'
+        }, {
+            name: 'Pinterest'
+        }, {
+            name: 'Playstation Network'
+        }, {
+            name: 'Quora'
+        }, {
+            name: 'Reddit'
+        }, {
+            name: 'Snapchat'
+        }, {
+            name: 'Skype'
+        }, {
+            name: 'Tumblr'
+        }, {
+            name: 'Twitter'
+        }, {
+            name: 'Vine'
+        }, {
+            name: 'WhatsApp'
+        }, {
+            name: 'Yelp'
+        }, {
+            name: 'Youtube'
+        }
+
+    ];
 
 
 }]);
