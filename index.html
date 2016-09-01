@@ -24,7 +24,7 @@
         </div>
         <div class="main-content">
             <ul class="rightUL">
-                <li ng-repeat="subject in subjects | filter:search" | ng-click="detectClick(subject)">
+                <li ng-repeat="subject in subjects | filter:search | orderBy: 'name'" ng-click="detectClick(subject)">
                     {{subject.name}}
                 </li>
             </ul>

@@ -79,10 +79,14 @@ app.controller('MainController', ['$scope', function($scope) {
         }, {
             name: 'Reddit'
         }, {
-            name: 'Snapchat'
-        }, {
             name: 'Skype'
         }, {
+            name: 'Snapchat'
+        }, {
+            name: 'Spotify'
+        }, {
+          name: 'SoundCloud'
+      }, {
             name: 'Tumblr'
         }, {
             name: 'Twitter'
