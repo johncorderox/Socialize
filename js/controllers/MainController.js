@@ -2,8 +2,8 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.validaton = function() {
 
-        var input = document.getElementById('userURL').value;
-        var error = document.getElementById('error-output');
+      var input = document.getElementById('userURL').value;
+      var error = document.getElementById('error-output');
 
         if (!input) {
 
@@ -17,12 +17,15 @@ app.controller('MainController', ['$scope', function($scope) {
         } else {
 
             error.innerHTML = "";
-            $('#userURL').removeClass('invalid-box');
+            $('#userbutton, #userURL').hide();
+            $('textarea').show();
+            
 
         }
 
 
     }
+
 
     $scope.code = function() {
 
@@ -34,12 +37,13 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
         var clickedSubject = $scope.subjects.indexOf(subject);
+        showcode();
         switch (clickedSubject) {
 
-
             case 0:
-                showcode();
+
                 break;
+
 
         }
     }
@@ -85,8 +89,8 @@ app.controller('MainController', ['$scope', function($scope) {
         }, {
             name: 'Spotify'
         }, {
-          name: 'SoundCloud'
-      }, {
+            name: 'SoundCloud'
+        }, {
             name: 'Tumblr'
         }, {
             name: 'Twitter'
