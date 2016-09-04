@@ -1,6 +1,8 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-    $scope.validaton = function() {
+
+
+    $scope.code = function() {
 
       var input = document.getElementById('userURL').value;
       var error = document.getElementById('error-output');
@@ -19,17 +21,19 @@ app.controller('MainController', ['$scope', function($scope) {
             error.innerHTML = "";
             $('#userbutton, #userURL').hide();
             $('textarea').show();
-            
+
+
 
         }
-
-
     }
 
+    $scope.resetall = function () {
+      var error = document.getElementById('error-output');
+      error.innerHTML = "";
+      $('textarea').hide();
 
-    $scope.code = function() {
 
-        $scope.validaton();
+
     }
 
 
@@ -38,10 +42,10 @@ app.controller('MainController', ['$scope', function($scope) {
 
         var clickedSubject = $scope.subjects.indexOf(subject);
         showcode();
+        $scope.resetall();
         switch (clickedSubject) {
 
             case 0:
-
                 break;
 
 
