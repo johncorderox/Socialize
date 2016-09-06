@@ -3,6 +3,8 @@
 
 -on hover each ng-repeat, change title to icon that will be given.
 
+-highlighting a certain area will highight the S and other letters so people can figure out what to click
+-a = About
 
 //==========================================
 

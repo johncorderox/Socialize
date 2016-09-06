@@ -1,7 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-
-
     $scope.code = function() {
 
       var input = document.getElementById('userURL').value;
@@ -27,27 +25,16 @@ app.controller('MainController', ['$scope', function($scope) {
         }
     }
 
-    $scope.resetall = function () {
-      var error = document.getElementById('error-output');
-      error.innerHTML = "";
-      $('textarea').hide();
-
-
-
-    }
 
 
     $scope.detectClick = function(subject) {
 
-
         var clickedSubject = $scope.subjects.indexOf(subject);
-        showcode();
-        $scope.resetall();
         switch (clickedSubject) {
 
             case 0:
+            showcode();
                 break;
-
 
         }
     }
