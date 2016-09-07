@@ -7,7 +7,7 @@ var trigger = 0;
 
 $(document).ready(function() {
 
-    $('#userURL , #userbutton, #final').hide();
+    $('#userURL , #userbutton').hide();
 
     $("#userURL").keyup(function(event) {
 

@@ -17,9 +17,20 @@ app.controller('MainController', ['$scope', function($scope) {
         } else {
 
             error.innerHTML = "";
-            $('#userbutton, #userURL').hide();
-            $('textarea').show();
+            /*
 
+            will have placeholder here, and each case will throw the index of
+            a subject into the parameters and will be outputted here.
+
+            ex:
+                code 0:
+                        showcode();
+                        $scope.code(DeviantartVariable);
+
+*/
+            $scope.site = "hi";
+            $('#userbutton').hide();
+            $('textarea').show();
 
 
         }
