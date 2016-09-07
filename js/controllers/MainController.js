@@ -28,7 +28,7 @@ app.controller('MainController', ['$scope', function($scope) {
                         $scope.code(DeviantartVariable);
 
 */
-            $scope.site = "hi";
+
             $('#userbutton').hide();
             $('textarea').show();
 
