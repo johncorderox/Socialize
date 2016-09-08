@@ -1,39 +1,21 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-    $scope.code = function() {
+    $scope.code = function(a) {
+
 
       var input = document.getElementById('userURL').value;
       var error = document.getElementById('error-output');
+      var code = document.getElementById('final');
 
-        if (!input) {
-
-            error.innerHTML = "Your URL contents are empty.";
-            $('#userURL').addClass('invalid-box');
-
-        } else if (input.length < 7) {
-
-            error.innerHTML = "Not a valid URL!";
-            $('#userURL').addClass('invalid-box');
-        } else {
 
             error.innerHTML = "";
-            /*
 
-            will have placeholder here, and each case will throw the index of
-            a subject into the parameters and will be outputted here.
-
-            ex:
-                code 0:
-                        showcode();
-                        $scope.code(DeviantartVariable);
-
-*/
-            $scope.site = "hi";
+            code.innerHTML = a;
             $('#userbutton').hide();
             $('textarea').show();
 
 
-        }
+
     }
 
 
@@ -45,6 +27,8 @@ app.controller('MainController', ['$scope', function($scope) {
 
             case 0:
             showcode();
+            $scope.code("deviantart","your","code");
+
                 break;
 
         }
