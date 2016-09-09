@@ -10,9 +10,9 @@ app.controller('MainController', ['$scope', function($scope) {
 
             error.innerHTML = "";
 
-            code.innerHTML = a;
+            code.value = a;
             $('#userbutton').hide();
-            $('textarea').show();
+
 
 
 
@@ -21,13 +21,12 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
     $scope.detectClick = function(subject) {
-
+        showcode();
         var clickedSubject = $scope.subjects.indexOf(subject);
         switch (clickedSubject) {
 
             case 0:
-            showcode();
-            $scope.code("deviantart","your","code");
+            $scope.code("deviantart");
 
                 break;
 

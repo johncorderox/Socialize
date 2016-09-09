@@ -44,8 +44,9 @@ button:active {
     color: white;
 }
 
-#s-trigger:Hover {
+#s-trigger:Hover, #a-trigger:Hover {
     color: #FF8C94;
+    cursor: pointer;
 }
 
 #searchbox {

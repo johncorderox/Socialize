@@ -3,6 +3,7 @@
 <b>master</b> - contains a fully functional code base, known as v1.<br>
 <b>workflow</b> - newer branch that will be undergoing changes, known as v2.
 <br>
+<b>corefunctions-1.0</b> 1st branch for core functions of the app. workflow will be using another method. <br>
 Feel free to check under the branch tab for progress!
 <hr>
 <br>

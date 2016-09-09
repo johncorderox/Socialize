@@ -13,14 +13,14 @@
 <body>
     <div ng-app="socialApp" ng-controller="MainController">
         <div class="title">
-            <h2 id="title"><span id="s-trigger">S</span>ocialize</h2>
+            <h2 id="title"><span id="s-trigger">S</span>oci<span id="a-trigger" href="tabs/about.html">a</span>lize</h2>
             <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
         </div>
         <div class="movement-section">
             <p id="error-output"></p>
             <input type="text" placeholder="Your URL*" id="userURL" ng-model = "usermodel"/><br />
-            <textarea  id="final">{{usermodel}}</textarea><br />
-            <button id="userbutton" ng-click="code()" >Get My Code</button>
+            <textarea id="final">{{usermodel}}</textarea><br />
+            <button ng-click="reset">Reset</button>
         </div>
         <div class="main-content">
             <ul class="rightUL">
