@@ -12,8 +12,8 @@ BUGS
 
 -searchbox:
 
-would be cool to add list of sites in an array and randomize each page load
+UNDIFINED is being logged, as well as a fix for the same r numbers being called.
 
+when longer social sites are displayed they are cut off
 ex:
-
-try social[6] or even social[13]
+    "Try Vine or even Linke"
