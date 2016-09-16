@@ -1,9 +1,3 @@
-var error_color = "#ff1a1a";
-var border_color = "#bfbfbf";
-var dark_pink = "#FF8C94";
-
-var trigger = 0;
-
 
 $(document).ready(function() {
 
@@ -49,9 +43,10 @@ function showcode () {
 function changesearch () {
 
   var al_length = attribute_list.length;
+  var r_num1 = Math.floor((Math.random() * al_length));
+  var r_num2 = Math.floor((Math.random() * al_length));
 
-  var r_num1 = Math.floor((Math.random() * al_length) + 1);
-  var r_num2 = Math.floor((Math.random() * al_length) + 1);
+
 
   $('#searchbox').attr('placeholder',
 

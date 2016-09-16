@@ -12,7 +12,6 @@ BUGS
 
 -searchbox:
 
-UNDIFINED is being logged, as well as a fix for the same r numbers being called.
 
 when longer social sites are displayed they are cut off
 ex:
