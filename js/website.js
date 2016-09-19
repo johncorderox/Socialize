@@ -38,14 +38,32 @@ function showcode () {
 
 
 
-
-
 function changesearch () {
 
+
   var al_length = attribute_list.length;
+
   var r_num1 = Math.floor((Math.random() * al_length));
   var r_num2 = Math.floor((Math.random() * al_length));
 
+  if(r_num1 == r_num2) {
+
+    if (r_num2 == attribute_list.length) {
+
+      r_num2 -= 1;
+    }
+
+    if (r_num2 == 0) {
+
+      r_num2 += 1;
+    }
+
+    else {
+
+      r_num2 += 1;
+    }
+
+  }
 
 
   $('#searchbox').attr('placeholder',
