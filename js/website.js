@@ -1,9 +1,13 @@
 
 $(document).ready(function() {
 
+<<<<<<< HEAD
   changesearch();
     $('#userURL , #userbutton, textarea, button').hide();
 
+=======
+    $('#userURL , #userbutton, #final').hide();
+>>>>>>> corefunctions-1.0
 
     $("#userURL").keyup(function(event) {
 
@@ -28,7 +32,11 @@ $(document).ready(function() {
 
 function showcode () {
 
+<<<<<<< HEAD
     $('#userURL , #userbutton, textarea, button').toggle();
+=======
+    $('#userURL , #userbutton , #final').toggle();
+>>>>>>> corefunctions-1.0
     $('#searchbox').toggle();
     $('.title').toggleClass("animated_top");
     $('#userURL').css('margin-bottom', '30px');

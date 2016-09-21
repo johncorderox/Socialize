@@ -14,6 +14,13 @@ app.controller('MainController', ['$scope', function($scope) {
             $('#userbutton').hide();
 
 
+<<<<<<< HEAD
+=======
+*/
+
+            $('#userbutton').hide();
+            $('textarea').show();
+>>>>>>> corefunctions-1.0
 
 
     }
