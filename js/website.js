@@ -3,9 +3,9 @@ $(document).ready(function() {
 
 
   changesearch();
-    $('#userURL , #userbutton, textarea, button').hide();
 
-    $('#userURL , #userbutton, #final').hide();
+  $('#userURL, #final').hide();
+
 
 
     $("#userURL").keyup(function(event) {
@@ -31,14 +31,9 @@ $(document).ready(function() {
 
 function showcode () {
 
-
-    $('#userURL , #userbutton, textarea, button').toggle();
-
-    $('#userURL , #userbutton , #final').toggle();
-
-    $('#searchbox').toggle();
-    $('.title').toggleClass("animated_top");
-    $('#userURL').css('margin-bottom', '30px');
+      $('.title').toggleClass("animated_top");
+      $('#userURL').toggle();
+      $('#searchbox').toggle();
 
 
 }

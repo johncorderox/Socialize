@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-    $scope.code = function(a) {
+    $scope.code = function() {
 
 
       var input = document.getElementById('userURL').value;
@@ -8,17 +8,7 @@ app.controller('MainController', ['$scope', function($scope) {
       var code = document.getElementById('final');
 
 
-            error.innerHTML = "";
 
-            code.value = a;
-            $('#userbutton').hide();
-
-
-
-
-
-            $('#userbutton').hide();
-            $('textarea').show();
 
 
 
