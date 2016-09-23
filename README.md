@@ -3,10 +3,11 @@
 <b>master</b> - contains a fully functional code base, known as v1.<br>
 <b>workflow</b> - newer branch that will be undergoing changes, known as v2.
 <br>
+<b>design-v1.0</b> version 1 that doesnt show the new design look. working as intended.<br>
+
 Feel free to check under the branch tab for progress!
 <hr>
 <br>
 # Socialize
-Socialize was made for people to aid them in creating hyperlink based images in HTML. Simply click on the desired social media site and enter your URL!
-<br>Socialize will give you your code for your website instantly.<br>
+Socialize was made for people to aid them in creating hyperlink based images in HTML. Simply click on the desired social media site and enter your URL! You will get the code instantly.
 <a href="http://tinypic.com?ref=1es6sn" target="_blank"><img src="http://i66.tinypic.com/1es6sn.jpg" border="0" alt="Image and video hosting by TinyPic"></a>

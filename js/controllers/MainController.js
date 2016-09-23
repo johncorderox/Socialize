@@ -2,15 +2,45 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.code = function() {
 
+        $scope.check();
+        $scope.reset();
 
-      var input = document.getElementById('userURL').value;
+        var imgsrc = "HOSTEDIMAGEURLGOESHERE.COM";
+        var userURL = document.getElementById('userURL').value;
+        document.getElementById('final').value = userURL;
+
+        $('#final, #reset').show();
+        $('#userURL, #submit').hide();
+
+
+    }
+
+    $scope.check = function() {
+
+        var input = document.getElementById('userURL').value;
+        var error = document.getElementById('error-output');
+
+        if (!input) {
+
+            error.innerHTML = "You did not enter a URL!";
+            System.exit(0);
+
+        } else if (input.length < 7) {
+
+            error.innerHTML = "URL is not valid!";
+            console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
+            System.exit(0);
+        }
+
+
+    }
+
+    $scope.reset = function () {
+
+
       var error = document.getElementById('error-output');
-      var code = document.getElementById('final');
 
-
-
-
-
+      error.innerHTML = "";
 
     }
 
@@ -22,7 +52,7 @@ app.controller('MainController', ['$scope', function($scope) {
         switch (clickedSubject) {
 
             case 0:
-            $scope.code("deviantart");
+
 
                 break;
 

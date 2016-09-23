@@ -22,7 +22,9 @@
             <p id="error-output"></p>
 
             <input type="text" placeholder="Your URL*" id="userURL" ng-model="usermodel" /><br />
+            <button id="submit" ng-click="code()">Get Code</button><br />
             <textarea id="final">{{usermodel}}</textarea><br />
+            <button id="reset" ng-click="reset(0)">Reset</button>
 
 
         </div>

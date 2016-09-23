@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   changesearch();
 
-  $('#userURL, #final').hide();
+  $('#userURL, #final, #submit, #reset').hide();
 
 
 
@@ -12,19 +12,12 @@ $(document).ready(function() {
 
         if (event.keyCode == 13) {
 
-            $('#userbutton').click();
+            $('#submit').click();
 
         }
 
     });
 
-    $("#s-trigger").click(function() {
-
-
-        $('#searchbox').toggle("slow");
-
-
-    });
 
 
 });
@@ -32,7 +25,7 @@ $(document).ready(function() {
 function showcode () {
 
       $('.title').toggleClass("animated_top");
-      $('#userURL').toggle();
+      $('#userURL, #submit').toggle();
       $('#searchbox').toggle();
 
 
@@ -68,6 +61,7 @@ function changesearch () {
   }
 
 
+
   $('#searchbox').attr('placeholder',
 
   "Try " +"'" +attribute_list[r_num1] +"'" + " or even " +"'" +attribute_list[r_num2]+"'");
@@ -86,10 +80,10 @@ var attribute_list = [
              'Instagram',
              'LinkedIn',
              'Myspace',
-             'Nintendo Network ID',
+             'Nintendo',
              'Periscope',
              'Pinterest',
-             'Playstation Network',
+             'Playstation',
              'Quora',
              'Reddit',
              'Skype',
