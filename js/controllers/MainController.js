@@ -1,20 +1,22 @@
 app.controller('MainController', ['$scope', function($scope) {
 
+  var a = "";
+
     $scope.code = function() {
 
         $scope.check();
         $scope.reset();
-
         var imgsrc = "HOSTEDIMAGEURLGOESHERE.COM";
         var userURL = document.getElementById('userURL').value;
-        document.getElementById('final').value = userURL;
+        document.getElementById('final').value =
+
+        "<a href=\""+userURL+"\">"+"<img src=\"IMGSRC\">";
 
         $('#final, #reset').show();
         $('#userURL, #submit').hide();
 
 
     }
-
     $scope.check = function() {
 
         var input = document.getElementById('userURL').value;
