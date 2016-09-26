@@ -15,16 +15,16 @@
 <body>
     <div ng-app="socialApp" ng-controller="MainController">
         <div class="title">
-            <h2 id="title">Socialize</h2>
+            <h2 id="title"><span id="reveal">S</span>oci<span id="reveal">a</span>lize</h2>
             <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
         </div>
         <div class="movement-section">
             <p id="error-output"></p>
 
             <input type="text" placeholder="Your URL*" id="userURL" ng-model="usermodel" /><br />
-            <button id="submit" ng-click="code()">Get Code</button><br />
+            <button id="submit" ng-click="check()">Get Code</button><br />
             <textarea id="final">{{usermodel}}</textarea><br />
-            <button id="reset" ng-click="reset(0)">Reset</button>
+            <button id="reset" ng-click="reset(1)">Reset</button>
 
 
         </div>

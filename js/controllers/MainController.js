@@ -1,22 +1,16 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-  var a = "";
 
-    $scope.code = function() {
+    $scope.code = function(a) {
 
-        $scope.check();
-        $scope.reset();
-        var imgsrc = "HOSTEDIMAGEURLGOESHERE.COM";
+        var imgsrc = a;
         var userURL = document.getElementById('userURL').value;
         document.getElementById('final').value =
 
-        "<a href=\""+userURL+"\">"+"<img src=\"IMGSRC\">";
-
-        $('#final, #reset').show();
-        $('#userURL, #submit').hide();
-
+        "<a href=\""+userURL+"\">"+"<img src=\""+imgsrc+"\">";
 
     }
+
     $scope.check = function() {
 
         var input = document.getElementById('userURL').value;
@@ -34,15 +28,25 @@ app.controller('MainController', ['$scope', function($scope) {
             System.exit(0);
         }
 
+        else {
+
+          $('#final, #reset').show();
+          $('#userURL, #submit').hide();
+          $scope.reset();
+
+        }
+
 
     }
 
     $scope.reset = function () {
 
-
       var error = document.getElementById('error-output');
 
       error.innerHTML = "";
+
+
+
 
     }
 
@@ -55,6 +59,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
             case 0:
 
+                  $scope.code("IMGURL.COM/DEVIANTART");
 
                 break;
 

@@ -1,7 +1,6 @@
 //==========================================
 // To do for Socialize
 
--on hover each ng-repeat, change title to icon that will be given.
 
 -highlighting a certain area will highight the S and other letters so people can figure out what to click
 -a = About -- NOT WORKING?!
@@ -14,12 +13,3 @@
 is universal code generated possible???
 
 //==========================================
-
-BUGS
-
--searchbox:
-
-
-when longer social sites are displayed they are cut off
-ex:
-    "Try Vine or even Linke"
