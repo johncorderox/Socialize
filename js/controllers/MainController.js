@@ -1,52 +1,63 @@
 app.controller('MainController', ['$scope', function($scope) {
 
-  var imgsrc = "";
+    var imgsrc = "";
 
 
     $scope.code = function() {
 
+        var input = document.getElementById('userURL').value;
+        var error = document.getElementById('error-output');
+        var userURL = document.getElementById('final').value;
+
+        if (!input) {
+
+            error.innerHTML = "You did not enter a URL!";
+            System.exit(0);
+
+        } else if (input.length < 7) {
+
+            error.innerHTML = "URL is not valid!";
+            console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
+            System.exit(0);
+        } else {
+
+            error.innerHTML = "";
+
+            $('#final, #reset').show();
+            $('#userURL, #submit').hide();
+            document.getElementById('final').value =
+
+                "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\">";
+
+
+        }
+
+
+
+    }
+
+
+    $scope.reset = function(num) {
+
       var input = document.getElementById('userURL').value;
       var error = document.getElementById('error-output');
       var userURL = document.getElementById('final').value;
+      document.getElementById('final').value = "";
 
-      if (!input) {
-
-          error.innerHTML = "You did not enter a URL!";
-          System.exit(0);
-
-      } else if (input.length < 7) {
-
-          error.innerHTML = "URL is not valid!";
-          console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
-          System.exit(0);
-      }
-
-      else {
-
-        $('#final, #reset').show();
-        $('#userURL, #submit').hide();
-        document.getElementById('final').value =
-
-        "<a href=\""+userURL+"\">"+"<img src=\""+imgsrc+"\">";
+        error.innerHTML = "";
+        input.value = "";
 
 
-      }
+        imgsrc = "";
 
+
+        $('#searchbox').show();
+        $('#final, #reset, #userURL').hide();
+        $('.title').removeClass("animated_top");
 
 
     }
 
-
-    $scope.reset = function () {
-
-      var error = document.getElementById('error-output');
-
-      error.innerHTML = "";
-
-
-
-
-    }
 
 
 
@@ -56,7 +67,7 @@ app.controller('MainController', ['$scope', function($scope) {
         switch (clickedSubject) {
 
             case 0:
-                  imgsrc = "Deviantart.png";
+                imgsrc = "Deviantart.png";
 
                 break;
 

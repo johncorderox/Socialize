@@ -28,6 +28,7 @@ function showcode () {
       $('.title').toggleClass("animated_top");
       $('#userURL, #submit').toggle();
       $('#searchbox').toggle();
+      $('.main-content').hide();
 
 
 }

@@ -13,3 +13,9 @@
 is universal code generated possible???
 
 //==========================================
+
+
+i button can be clickedSubject
+"information"
+
+global count can go here.
