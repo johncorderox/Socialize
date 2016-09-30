@@ -1,43 +1,41 @@
 app.controller('MainController', ['$scope', function($scope) {
 
+  var imgsrc = "";
 
-    $scope.code = function(a) {
 
-        var imgsrc = a;
-        var userURL = document.getElementById('userURL').value;
+    $scope.code = function() {
+
+      var input = document.getElementById('userURL').value;
+      var error = document.getElementById('error-output');
+      var userURL = document.getElementById('final').value;
+
+      if (!input) {
+
+          error.innerHTML = "You did not enter a URL!";
+          System.exit(0);
+
+      } else if (input.length < 7) {
+
+          error.innerHTML = "URL is not valid!";
+          console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
+          System.exit(0);
+      }
+
+      else {
+
+        $('#final, #reset').show();
+        $('#userURL, #submit').hide();
         document.getElementById('final').value =
 
         "<a href=\""+userURL+"\">"+"<img src=\""+imgsrc+"\">";
 
-    }
 
-    $scope.check = function() {
+      }
 
-        var input = document.getElementById('userURL').value;
-        var error = document.getElementById('error-output');
-
-        if (!input) {
-
-            error.innerHTML = "You did not enter a URL!";
-            System.exit(0);
-
-        } else if (input.length < 7) {
-
-            error.innerHTML = "URL is not valid!";
-            console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
-            System.exit(0);
-        }
-
-        else {
-
-          $('#final, #reset').show();
-          $('#userURL, #submit').hide();
-          $scope.reset();
-
-        }
 
 
     }
+
 
     $scope.reset = function () {
 
@@ -58,8 +56,7 @@ app.controller('MainController', ['$scope', function($scope) {
         switch (clickedSubject) {
 
             case 0:
-
-                  $scope.code("IMGURL.COM/DEVIANTART");
+                  imgsrc = "Deviantart.png";
 
                 break;
 
