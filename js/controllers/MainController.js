@@ -68,6 +68,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
             case 0:
                 imgsrc = "Deviantart.png";
+                document.getElementById('icon').src ="icons/Twitter.png";
 
                 break;
 

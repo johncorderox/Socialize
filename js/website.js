@@ -30,7 +30,6 @@ function showcode () {
       $('#searchbox').toggle();
       $('.main-content').hide();
 
-
 }
 
 

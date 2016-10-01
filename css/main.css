@@ -57,6 +57,13 @@ button:active {
   font-family: arial;
 }
 
+#reveal, #s-reveal {
+
+    cursor: pointer;
+  color: #FF8C94;
+
+
+}
 code-form {
     width: 300px;
 }
@@ -112,11 +119,4 @@ textarea {
 .animated_top {
 
     top: 200px;
-}
-
-.reveal {
-
-  color: #FF8C94;
-
-
 }
