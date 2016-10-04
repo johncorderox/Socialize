@@ -95,6 +95,7 @@ var attribute_list = [
              'Twitter',
              'Vine',
              'WhatsApp',
+             'Yahoo ID',
              'Yelp',
              'Youtube'
     ];

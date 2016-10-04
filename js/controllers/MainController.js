@@ -39,10 +39,10 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.reset = function(num) {
 
-      var input = document.getElementById('userURL').value;
-      var error = document.getElementById('error-output');
-      var userURL = document.getElementById('final').value;
-      document.getElementById('final').value = "";
+        var input = document.getElementById('userURL').value;
+        var error = document.getElementById('error-output');
+        var userURL = document.getElementById('final').value;
+        document.getElementById('final').value = "";
 
         error.innerHTML = "";
         input.value = "";
@@ -68,7 +68,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
             case 0:
                 imgsrc = "Deviantart.png";
-                document.getElementById('icon').src ="icons/Twitter.png";
+                document.getElementById('icon').src = "icons/Twitter.png";
 
                 break;
 
@@ -130,6 +130,10 @@ app.controller('MainController', ['$scope', function($scope) {
             name: 'Yelp'
         }, {
             name: 'Youtube'
+        },
+    /* Below are additional social networks for better organization */
+         {
+            name: 'Yahoo ID'
         }
 
     ];
