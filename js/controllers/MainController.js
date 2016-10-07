@@ -51,24 +51,25 @@ app.controller('MainController', ['$scope', function($scope) {
         imgsrc = "";
 
 
-        $('#searchbox').show();
-        $('#final, #reset, #userURL').hide();
+        $('#searchbox, .main-content').show();
+        $('#final, #reset, #userURL, #submit, #icon').hide();
         $('.title').removeClass("animated_top");
+        $('#icon').removeClass("main-content");
 
 
     }
 
 
-
-
     $scope.detectClick = function(subject) {
+
         showcode();
         var clickedSubject = $scope.subjects.indexOf(subject);
         switch (clickedSubject) {
 
             case 0:
                 imgsrc = "Deviantart.png";
-                document.getElementById('icon').src = "icons/Twitter.png";
+                document.getElementById('icon').src = "icons/deviantart.png";
+                $('#icon').addClass("main-content");
 
                 break;
 
