@@ -19,3 +19,7 @@ i button can be clickedSubject
 "information"
 
 global count can go here.
+
+//===================
+
+Add custom class for icons to be centered as the .title section
