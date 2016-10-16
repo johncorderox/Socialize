@@ -111,6 +111,15 @@ textarea {
     font-size: 30px;
 }
 
+.main-content-icon {
+
+margin-left: 780px;
+margin-top: 220px;
+margin-right: 100px;
+
+
+}
+
 .invalid-box {
     border: 0;
     outline: 0;
