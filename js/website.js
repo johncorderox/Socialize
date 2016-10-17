@@ -29,7 +29,8 @@ function showcode () {
       $('#icon').addClass("main-content-icon");
       $('#userURL, #submit, #reset').toggle();
       $('#searchbox').toggle();
-      $('.main-content').hide();
+      $('.main-content').hide("slow");
+      $('#icon').show();
 
 }
 

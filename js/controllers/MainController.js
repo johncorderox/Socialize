@@ -14,17 +14,19 @@ app.controller('MainController', ['$scope', function($scope) {
             error.innerHTML = "You did not enter a URL!";
             System.exit(0);
 
-        } else if (input.length < 7) {
+        }
+        if (input.length < 4) {
 
             error.innerHTML = "URL is not valid!";
             console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
             System.exit(0);
+
         } else {
 
             error.innerHTML = "";
 
             $('#final, #reset').show();
-            $('#userURL, #submit').hide();
+            $('#userURL, #submit, #reset').hide();
             document.getElementById('final').value =
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\">";
@@ -39,22 +41,19 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.reset = function(num) {
 
-        var input = document.getElementById('userURL').value;
-        var error = document.getElementById('error-output');
-        var userURL = document.getElementById('final').value;
 
+        var error = document.getElementById('error-output');
+        error.innerHTML = "";
+
+        document.getElementById('userURL').value = "";
         document.getElementById('userURL').placeholder = "Your URL*";
         document.getElementById('final').value = "";
-
-        error.innerHTML = "";
-        input.value = "hi";
-
 
 
         $('#searchbox, .main-content').show();
         $('#final, #reset, #userURL, #submit, #icon').hide();
         $('.title').removeClass("animated_top");
-        
+
 
 
     }
@@ -154,8 +153,8 @@ app.controller('MainController', ['$scope', function($scope) {
                 break;
 
             case 12:
-                imgsrc = "pintrest.png";
-                document.getElementById('icon').src = "icons/pintrest.png";
+                imgsrc = "pinterest.png";
+                document.getElementById('icon').src = "icons/pinterest.png";
 
 
                 break;
@@ -250,7 +249,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
                 break;
-    /* below are custom, additional sites */
+                /* below are custom, additional sites */
 
             case 26:
                 imgsrc = "yahooid.png";

@@ -103,6 +103,8 @@ textarea {
     bottom: 47%;
     left: 0%;
     right: 0%;
+
+
 }
 
 .main-content {
@@ -120,12 +122,6 @@ margin-right: 100px;
 
 }
 
-.invalid-box {
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 2px solid red;
-}
 
 .animated_top {
 

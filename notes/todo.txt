@@ -22,4 +22,6 @@ global count can go here.
 
 //===================
 
-Add custom class for icons to be centered as the .title section
+BUGS
+
+if you keep pressing enter, more code will generate. check keyup function
