@@ -9,27 +9,21 @@ app.controller('MainController', ['$scope', function($scope) {
         var error = document.getElementById('error-output');
         var userURL = document.getElementById('final').value;
 
-        if (!input) {
+        if (!input || input.length < 3) {
 
-            error.innerHTML = "You did not enter a URL!";
+            error.innerHTML = "You did not enter a valid URL!";
             System.exit(0);
 
         }
-        if (input.length < 4) {
-
-            error.innerHTML = "URL is not valid!";
-            console.log("Most likely the user entered a false URL, a fake URL, or randomness,The function checks for a length > 7");
-            System.exit(0);
-
-        } else {
+          else {
 
             error.innerHTML = "";
 
-            $('#final, #reset').show();
+            $('#final, #reset2').show();
             $('#userURL, #submit, #reset').hide();
             document.getElementById('final').value =
 
-                "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\">";
+                "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
 
         }
@@ -51,7 +45,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
         $('#searchbox, .main-content').show();
-        $('#final, #reset, #userURL, #submit, #icon').hide();
+        $('#final, #reset, #userURL, #submit, #icon, #reset2').hide();
         $('.title').removeClass("animated_top");
 
 
@@ -111,7 +105,7 @@ app.controller('MainController', ['$scope', function($scope) {
                 break;
 
             case 6:
-                imgsrc = "Foursquare.png";
+                imgsrc = "googleplus.png";
                 document.getElementById('icon').src = "icons/googleplus.png";
 
 

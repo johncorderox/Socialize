@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   changesearch();
 
-  $('#userURL, #final, #submit, #reset').hide();
+  $('#userURL, #final, #submit, #reset, #reset2').hide();
 
 
 

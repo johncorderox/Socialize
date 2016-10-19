@@ -32,8 +32,6 @@ button {
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-
-
 }
 
 button:Hover {
@@ -46,26 +44,6 @@ button:active {
     color: white;
 }
 
-#searchbox {
-    width: 360px;
-    padding: 10px;
-}
-
-#error-output {
-
-  color: red;
-  font-weight: 500;
-  font-size: 14px;
-  font-family: arial;
-}
-
-#reveal, #s-reveal {
-
-    cursor: pointer;
-  color: #FF8C94;
-
-
-}
 code-form {
     width: 300px;
 }
@@ -79,16 +57,15 @@ input {
     border-bottom: 2px solid black;
     width: 360px;
 }
+
 textarea {
-
-  font-size: 20px;
-  padding: 10px;
-  border-color: black;
-  border-width: 2px;
-  margin-top: 35px;
-  width: 360px;
-  height: 120px;
-
+    font-size: 20px;
+    padding: 10px;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 35px;
+    width: 360px;
+    height: 120px;
 }
 
 .title h2 {
@@ -103,8 +80,6 @@ textarea {
     bottom: 47%;
     left: 0%;
     right: 0%;
-
-
 }
 
 .main-content {
@@ -114,16 +89,23 @@ textarea {
 }
 
 .main-content-icon {
-
-margin-left: 780px;
-margin-top: 220px;
-margin-right: 100px;
-
-
+    margin-left: 780px;
+    margin-top: 220px;
+    margin-right: 100px;
 }
 
-
 .animated_top {
-
     top: 200px;
+}
+
+#searchbox {
+    width: 360px;
+    padding: 10px;
+}
+
+#error-output {
+    color: red;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: arial;
 }
