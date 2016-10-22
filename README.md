@@ -1,7 +1,6 @@
 # Socialize
 Socialize was made for people to aid them in creating hyperlink based images in HTML. Simply click on the desired social media site and enter your URL! You will get the code instantly.
 <a href="http://tinypic.com?ref=1es6sn" target="_blank"><img src="http://i66.tinypic.com/1es6sn.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
-<hr><br>
 #Author
 www.twitter.com/johncorderox
 <br>
