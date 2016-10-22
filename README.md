@@ -5,7 +5,6 @@ Socialize was made for people to aid them in creating hyperlink based images in 
 #Author
 www.twitter.com/johncorderox
 <br>
-<hr>
 [Note] As much as I loved this project, I have decided that I will be redesigning it day by day to enhance the design + angular code. The site is functional but a bit messy.<br>
 <h4>Branch List</h4>
 <b>master</b> - contains a fully functional code base, known as v1.<br>
@@ -13,6 +12,3 @@ www.twitter.com/johncorderox
 <b>design-v1.0</b> version 1 that doesnt show the new design look. working as intended.<br>
 <b>design-socialize</b>Last stage before bootstrap conversion
 
-Feel free to check under the branch tab for progress!
-<hr>
-<br>
