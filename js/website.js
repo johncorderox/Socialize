@@ -25,8 +25,7 @@ $(document).ready(function() {
 
 function showcode () {
 
-      $('.title').toggleClass("animated_top");
-      $('#icon').addClass("main-content-icon");
+
       $('#userURL, #submit, #reset').toggle();
       $('#searchbox').toggle();
       $('.main-content').hide("slow");

@@ -1,8 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
 
 
-
-
     $scope.code = function() {
 
         var input = document.getElementById('userURL').value;
@@ -25,13 +23,9 @@ app.controller('MainController', ['$scope', function($scope) {
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
-
         }
 
-
-
     }
-
 
     $scope.reset = function(num) {
 
@@ -47,10 +41,7 @@ app.controller('MainController', ['$scope', function($scope) {
         $('#final, #reset, #userURL, #submit, #icon, #reset2').hide();
         $('.title').removeClass("animated_top");
 
-
-
     }
-
 
 
     $scope.detectClick = function(subject) {

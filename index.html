@@ -10,35 +10,40 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
-
 <body>
     <div ng-app="socialApp" ng-controller="MainController">
-        <div class="title">
-            <h2 id="title">Socialize</h2>
-            <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="title">
+              <h2 id="title">Socialize</h2>
+              <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
+          </div>
+          <div class="movement-section">
+              <p id="error-output"></p>
+
+              <input type="text" placeholder="Your URL*" id="userURL" ng-model="usermodel" /><br />
+              <button id="submit" ng-click="code()">Code</button>
+              <button id="reset" ng-click="reset()">Reset</button><br />
+              <textarea id="final">{{usermodel}}</textarea><br />
+              <button id="reset2" ng-click="reset()">Reset</button><br />
+          </div>
         </div>
-        <div class="movement-section">
-            <p id="error-output"></p>
-
-            <input type="text" placeholder="Your URL*" id="userURL" ng-model="usermodel" /><br />
-            <button id="submit" ng-click="code()">Code</button>
-            <button id="reset" ng-click="reset()">Reset</button><br />
-            <textarea id="final">{{usermodel}}</textarea><br />
-            <button id="reset2" ng-click="reset()">Reset</button><br />
 
 
-
+        <div class="col-sm-6">
+          <div class="main-content">
+              <ul class="rightUL">
+                  <li ng-repeat="subject in subjects | filter:search | orderBy: 'name'" ng-click="detectClick(subject)">
+                      {{subject.name}}
+                  </li>
+              </ul>
+          </div>
+          <img id="icon" />
+      </div>
         </div>
-        <div class="main-content">
-            <ul class="rightUL">
-                <li ng-repeat="subject in subjects | filter:search | orderBy: 'name'" ng-click="detectClick(subject)">
-                    {{subject.name}}
-                </li>
+      </div>
 
-            </ul>
-        </div>
-        <img id="icon" />
-    </div>
 
 </body>
 <!-- Modules -->
@@ -50,5 +55,4 @@
 <!-- Javascript -->
 <script type='text/javascript' src='js/website.js'></script>
 </body>
-
 </html>

@@ -1,7 +1,4 @@
-body {
 
-  width: 900px;
-}
 h2 {
     font-family: 'Roboto', sans-serif;
     color: black;
@@ -77,25 +74,18 @@ textarea {
 }
 
 .title, .movement-section {
-    margin-left: 230px;
-    position: fixed;
-    width: 360px;
-    top: 47%;
-    bottom: 47%;
-    left: 0%;
-    right: 0%;
+
+margin-top: 60%;
+
 }
 
 .main-content {
-    margin-top: 15px;
-    margin-left: 680px;
+
     font-size: 30px;
 }
 
 .main-content-icon {
-    margin-left: 780px;
-    margin-top: 220px;
-    margin-right: 100px;
+
 }
 
 .animated_top {
@@ -103,7 +93,7 @@ textarea {
 }
 
 #searchbox {
-    width: 360px;
+
     padding: 10px;
 }
 
