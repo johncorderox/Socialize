@@ -40,7 +40,6 @@ app.controller('MainController', ['$scope', function($scope) {
         error.innerHTML = "";
 
         document.getElementById('userURL').value = "";
-        document.getElementById('userURL').placeholder = "Your URL*";
         document.getElementById('final').value = "";
 
 
