@@ -73,9 +73,10 @@ textarea {
     font-size: 60px;
 }
 
-.title, .movement-section {
+.title {
 
 margin-top: 60%;
+margin-left: 25%;
 
 }
 
@@ -84,12 +85,17 @@ margin-top: 60%;
     font-size: 30px;
 }
 
-.main-content-icon {
+.user-interface {
 
+  margin-top: 5%;
+  margin-left: 20%;
 }
 
-.animated_top {
-    top: 200px;
+
+#icon {
+
+  margin-top: 60%;
+  margin-left: 25%;
 }
 
 #searchbox {

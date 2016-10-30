@@ -7,8 +7,6 @@ $(document).ready(function() {
   $('#userURL, #final, #submit, #reset, #reset2').hide();
 
 
-
-
     $("#userURL").keyup(function(event) {
 
         if (event.keyCode == 13) {
@@ -30,6 +28,8 @@ function showcode () {
       $('#searchbox').toggle();
       $('.main-content').hide("slow");
       $('#icon').show();
+      
+
 
 }
 
