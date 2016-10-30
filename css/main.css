@@ -75,8 +75,11 @@ textarea {
 
 .title {
 
-margin-top: 60%;
-margin-left: 25%;
+margin-top: 25%;
+margin-left: 8%;
+position: fixed;
+overflow: hidden;
+
 
 }
 
@@ -87,8 +90,8 @@ margin-left: 25%;
 
 .user-interface {
 
-  margin-top: 5%;
-  margin-left: 20%;
+  margin-top: 80%;
+  margin-left: 15%;
 }
 
 

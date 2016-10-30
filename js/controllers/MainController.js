@@ -5,7 +5,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
         var input = document.getElementById('userURL').value;
         var error = document.getElementById('error-output');
-        var userURL = document.getElementById('final').value;
+        var userURL = document.getElementById('userURL').value;
 
         if (!input || input.length < 3) {
 
@@ -27,14 +27,14 @@ app.controller('MainController', ['$scope', function($scope) {
 
     }
 
-    $scope.reset = function(num) {
+    $scope.reset = function() {
 
 
         var error = document.getElementById('error-output');
         error.innerHTML = "";
 
         document.getElementById('userURL').value = "";
-        document.getElementById('final').value = "";
+      //  document.getElementById('final').value = "";
 
 
         $('#searchbox, .main-content').show();
@@ -49,6 +49,7 @@ app.controller('MainController', ['$scope', function($scope) {
         showcode();
 
         var clickedSubject = $scope.subjects.indexOf(subject);
+
         switch (clickedSubject) {
 
             case 0:
