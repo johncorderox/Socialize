@@ -82,8 +82,8 @@ app.controller('MainController', ['$scope', function($scope) {
                 break;
 
             case 4:
-                imgsrc = "Foursquare.png";
-                document.getElementById('icon').src = "icons/Foursquare.png";
+                imgsrc = "foursquare.png";
+                document.getElementById('icon').src = "icons/foursquare.png";
 
 
                 break;
