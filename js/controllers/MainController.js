@@ -17,7 +17,8 @@ app.controller('MainController', ['$scope', function($scope) {
 
             error.innerHTML = "";
 
-            $('#final, #reset2').show();
+            $('#final').show(500);
+            $('#reset2').show();
             $('#userURL, #submit, #reset').hide();
             document.getElementById('final').value =
 
