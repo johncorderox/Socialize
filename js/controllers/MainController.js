@@ -18,7 +18,7 @@ app.controller('MainController', ['$scope', function($scope) {
             error.innerHTML = "";
 
             $('#final').show(500);
-            $('#reset2').show();
+            $('#reset2, #help').show();
             $('#userURL, #submit, #reset').hide();
             document.getElementById('final').value =
 
@@ -39,7 +39,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
         $('#searchbox, .main-content').show();
-        $('#final, #reset, #userURL, #submit, #icon, #reset2').hide();
+        $('#final, #reset, #userURL, #submit, #icon, #reset2, #help').hide();
         $('.title').removeClass("animated_top");
 
     }

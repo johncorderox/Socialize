@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   changesearch();
 
-  $('#userURL, #final, #submit, #reset, #reset2').hide();
+  $('#userURL, #final, #submit, #reset, #reset2, #help').hide();
 
 
     $("#userURL").keyup(function(event) {
@@ -28,7 +28,7 @@ function showcode () {
       $('#searchbox').toggle();
       $('.main-content').hide("slow");
       $('#icon').show();
-      
+
 
 
 }
