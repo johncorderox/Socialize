@@ -35,12 +35,24 @@ app.controller('MainController', ['$scope', function($scope) {
         error.innerHTML = "";
 
         document.getElementById('userURL').value = "";
-      //  document.getElementById('final').value = "";
+
 
 
         $('#searchbox, .main-content').show();
         $('#final, #reset, #userURL, #submit, #icon, #reset2, #help').hide();
         $('.title').removeClass("animated_top");
+
+    }
+
+    $scope.help = function () {
+
+      //Idea
+      // Highlight the variables with certain colors
+      //
+      //
+      // right side or left  ex:
+      //  This is your + image link +
+
 
     }
 
