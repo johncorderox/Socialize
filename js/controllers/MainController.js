@@ -24,6 +24,11 @@ app.controller('MainController', ['$scope', function($scope) {
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
+                // This is where the help me function displays
+
+              
+
+
         }
 
     }
@@ -46,12 +51,9 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.help = function () {
 
-      //Idea
-      // Highlight the variables with certain colors
-      //
-      //
-      // right side or left  ex:
-      //  This is your + image link +
+      $('#icon').hide();
+      $('#extra-content').show("slow");
+
 
 
     }

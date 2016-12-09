@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   changesearch();
 
-  $('#userURL, #final, #submit, #reset, #reset2, #help').hide();
+  $('#userURL, #final, #submit, #reset, #reset2, #help, #extra-content').hide();
 
 
     $("#userURL").keyup(function(event) {

@@ -92,6 +92,7 @@ overflow: hidden;
 
   margin-top: 80%;
   margin-left: 15%;
+
 }
 
 
@@ -111,4 +112,11 @@ overflow: hidden;
     font-weight: 500;
     font-size: 14px;
     font-family: arial;
+}
+
+@media screen and (max-width: 560px) {
+
+
+
+
 }
