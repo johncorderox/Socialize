@@ -10,10 +10,10 @@ app.controller('MainController', ['$scope', function($scope) {
         if (!input || input.length < 3) {
 
             error.innerHTML = "You did not enter a valid URL!";
+            $('input').css("border-color", "red");
             System.exit(0);
 
-        }
-          else {
+        } else {
 
             error.innerHTML = "";
 
@@ -24,10 +24,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
-                // This is where the help me function displays
-
-              
-
+            // This is where the help me function displays
 
         }
 
@@ -35,8 +32,10 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.reset = function() {
 
-
+        var input = document.getElementById('userURL');
         var error = document.getElementById('error-output');
+
+
         error.innerHTML = "";
 
         document.getElementById('userURL').value = "";
@@ -47,12 +46,14 @@ app.controller('MainController', ['$scope', function($scope) {
         $('#final, #reset, #userURL, #submit, #icon, #reset2, #help').hide();
         $('.title').removeClass("animated_top");
 
+        $('input').css("border-color","black");
+
     }
 
-    $scope.help = function () {
+    $scope.help = function() {
 
-      $('#icon').hide();
-      $('#extra-content').show("slow");
+        $('#icon').hide();
+        $('#extra-content').show("slow");
 
 
 
