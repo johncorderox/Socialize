@@ -11,10 +11,11 @@
 </head>
 <body>
     <div ng-app="socialApp" ng-controller="MainController">
+        <div class="left-side">
               <div class="title">
               <h2 id="title">Socialize</h2>
               <input id="searchbox" type="text" ng-model="search" placeholder=" Try 'twitter or even 'github'" />
-          </div>
+            </div>
           <div class="user-interface">
               <p id="error-output"></p>
               <input type="text" placeholder="Your URL*" id="userURL" ng-model="usermodel" /><br />
@@ -22,8 +23,10 @@
               <button id="reset" ng-click="reset()">Reset</button><br />
               <textarea id="final">{{usermodel}}</textarea><br />
               <button id="reset2" ng-click="reset()">Reset</button>
-              <button id="help" ng-click="help()">Help me</button><br />
+              <button id="help" ng-click="help()">Help me</button>
+
           </div>
+            </div>
           <div class="main-content">
               <ul class="rightUL">
                   <li ng-repeat="subject in subjects | filter:search | orderBy: 'name'" ng-click="detectClick(subject)">

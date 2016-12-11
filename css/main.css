@@ -45,9 +45,6 @@ button:active {
     color: white;
 }
 
-code-form {
-    width: 300px;
-}
 
 input {
     font-size: 20px;
@@ -73,28 +70,51 @@ textarea {
     font-size: 60px;
 }
 
+
+.left-side {
+
+width: 450px;
+height: 200px;
+float: left;
+
+}
+
 .title {
 
 
 position: fixed;
 overflow: hidden;
 
+margin-top: 300px;
+margin-left: 100px;
 
 }
+
 
 .main-content, #extra-content {
 
     font-size: 30px;
+    float: right;
+    height: 1000px;
+    width: 400px;
+
 }
 
 .user-interface {
 
-
+margin-top: 400px;
+margin-left: 100px;
+width: 400px;
 
 }
 
 
 #icon {
+
+  float: right;
+  margin-top: 320px;
+  margin-right: 250px;
+
 
 }
 
@@ -106,6 +126,6 @@ overflow: hidden;
 #error-output {
     color: red;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     font-family: arial;
 }
