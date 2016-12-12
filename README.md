@@ -12,6 +12,6 @@ johncorderox@gmail.com<br>
 <b>workflow</b> - Complete <br>
 <b>gh-pages</b> - Live website for testing.<br>
 <b>master</b> - contains a fully functional code base, known as v1.<br>
-<b>design-v1.0</b> version 1 that doesnt show the new design look. working as intended.<br>
-<b>design-socialize</b>Last stage before bootstrap conversion
+<b>design-v1.0</b> - version 1 that doesnt show the new design look. working as intended.<br>
+<b>design-socialize</b> - Last stage before bootstrap conversion
 <br>

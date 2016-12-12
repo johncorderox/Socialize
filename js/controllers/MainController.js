@@ -24,8 +24,22 @@ app.controller('MainController', ['$scope', function($scope) {
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
+            // Explanation -- $scope.help();
+
+            // CSS Changes
+            $('#userURL','#imgsrc').css("color", "red");
+
             // This is where the help me function displays
 
+            document.getElementById('extra-content').innerHTML =
+
+
+            "Clicking the photo will send the user to this link:" + "<br>"+
+            "'" + userURL + "'" + "<br>" + "<br>" +
+            "The source where your image is hosted is at:" + "<br>"+
+            "'" + imgsrc + "'" + "<br>" + "<br>"+
+            "Paste your code on an HTML webpage and let your icon shine!"+ "<br>"+ "<br>";
+          
         }
 
     }
