@@ -26,8 +26,6 @@ app.controller('MainController', ['$scope', function($scope) {
 
             // Explanation -- $scope.help();
 
-            // CSS Changes
-            $('#userURL','#imgsrc').css("color", "red");
 
             // This is where the help me function displays
 
@@ -35,11 +33,11 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
             "Clicking the photo will send the user to this link:" + "<br>"+
-            "'" + userURL + "'" + "<br>" + "<br>" +
+            "'" + "<span style=\"color:#FF8C94\">" + userURL + "</span>" + "'" + "<br>" + "<br>" +
             "The source where your image is hosted is at:" + "<br>"+
-            "'" + imgsrc + "'" + "<br>" + "<br>"+
+            "'" + "<span style=\"color:#FF8C94\">" + imgsrc + "</span>" + "'" + "<br>" + "<br>" +
             "Paste your code on an HTML webpage and let your icon shine!"+ "<br>"+ "<br>";
-          
+
         }
 
     }
