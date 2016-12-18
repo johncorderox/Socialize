@@ -24,9 +24,8 @@ app.controller('MainController', ['$scope', function($scope) {
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
-            // Explanation -- $scope.help();
-
-
+            // Explanation -- $scope.help(); 
+            //
             // This is where the help me function displays
 
             document.getElementById('extra-content').innerHTML =
@@ -55,7 +54,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
 
         $('#searchbox, .main-content').show();
-        $('#final, #reset, #userURL, #submit, #icon, #reset2, #help').hide();
+        $('#final, #reset, #userURL, #submit, #icon, #reset2, #help, #extra-content').hide();
         $('.title').removeClass("animated_top");
 
         $('input').css("border-color","black");
