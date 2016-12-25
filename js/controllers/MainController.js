@@ -24,7 +24,7 @@ app.controller('MainController', ['$scope', function($scope) {
 
                 "<a href=\"" + userURL + "\">" + "<img src=\"" + imgsrc + "\" border=\"0\" alt=\"socialicon\">";
 
-            // Explanation -- $scope.help(); 
+            // Explanation -- $scope.help();
             //
             // This is where the help me function displays
 
