@@ -3,9 +3,9 @@ app.controller('MainController', ['$scope', function($scope) {
 
     $scope.code = function() {
 
-        var input = document.getElementById('userURL').value;
-        var error = document.getElementById('error-output');
-        var userURL = document.getElementById('userURL').value;
+        let input = document.getElementById('userURL').value;
+        let error = document.getElementById('error-output');
+        let userURL = document.getElementById('userURL').value;
 
         if (!input || input.length < 3) {
 
