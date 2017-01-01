@@ -70,10 +70,7 @@ textarea {
 
 .left-side {
     width: 450px;
-<<<<<<< HEAD
-
-=======
->>>>>>> d6d58184236cf5269ab9191f86cfd98276c6ce9b
+    height: 200px;
     float: left;
 }
 
@@ -95,7 +92,6 @@ textarea {
 .user-interface {
     margin-top: 400px;
     margin-left: 100px;
-    width: 400px;
     position: fixed;
 }
 
@@ -114,6 +110,7 @@ textarea {
     font-weight: 500;
     font-size: 15px;
     font-family: arial;
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 980px) {
@@ -130,29 +127,20 @@ textarea {
         font-size: 25px;
     }
     .user-interface {
-
-      margin: 0;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      margin-top: 30%;
-
-
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        margin-top: 30%;
     }
     #searchbox {
-      width: 70%;
-      text-align: center;
+        width: 70%;
+        text-align: center;
     }
-
     #extra-content {
-
-    width: 100%;
-    margin: 0%;
-    font-size: 20px;
-    clear: left;
-
-
+        width: 100%;
+        margin: 0%;
+        font-size: 20px;
+        clear: left;
     }
-
-
 }
